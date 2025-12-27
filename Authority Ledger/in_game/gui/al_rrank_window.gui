@@ -1,0 +1,1146 @@
+window = {
+	name = "al_rrank_window"
+	layer = top
+	parentanchor = center
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	size = { 980 690 }
+	datacontext = "[GetPlayer]"
+	datacontext = "[GetVariableSystem]"
+
+	using = bg_window_default
+	using = bg_cabinet_card_frame
+
+	vbox = {
+		margin_right = 5
+		margin_left = 5
+
+		window_header_alt = {
+			blockoverride "header_text" {
+				text = "al_rrank_window_title"
+				align = center
+			}
+		}
+
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			size = { 0 0 }
+
+			blockoverride "scrollbox_content" {
+				widget = { size = { 0 10 } }
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r1_button"
+						onclick = "[GetScriptedGui('al_rrank_r1_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r1_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r1_sub_1_button"
+						onclick = "[GetScriptedGui('al_r1_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r1_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r1_sub_2_button"
+						onclick = "[GetScriptedGui('al_r1_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r1_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r1_sub_3_button"
+						onclick = "[GetScriptedGui('al_r1_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r1_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r1_sub_4_button"
+						onclick = "[GetScriptedGui('al_r1_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r1_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r1_sub_5_button"
+						onclick = "[GetScriptedGui('al_r1_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r1_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r1_sub_6_button"
+						onclick = "[GetScriptedGui('al_r1_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r1_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r2_button"
+						onclick = "[GetScriptedGui('al_rrank_r2_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r2_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r2_sub_1_button"
+						onclick = "[GetScriptedGui('al_r2_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r2_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r2_sub_2_button"
+						onclick = "[GetScriptedGui('al_r2_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r2_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r2_sub_3_button"
+						onclick = "[GetScriptedGui('al_r2_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r2_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r2_sub_4_button"
+						onclick = "[GetScriptedGui('al_r2_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r2_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r2_sub_5_button"
+						onclick = "[GetScriptedGui('al_r2_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r2_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r2_sub_6_button"
+						onclick = "[GetScriptedGui('al_r2_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r2_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r3_button"
+						onclick = "[GetScriptedGui('al_rrank_r3_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r3_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r3_sub_1_button"
+						onclick = "[GetScriptedGui('al_r3_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r3_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r3_sub_2_button"
+						onclick = "[GetScriptedGui('al_r3_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r3_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r3_sub_3_button"
+						onclick = "[GetScriptedGui('al_r3_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r3_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r3_sub_4_button"
+						onclick = "[GetScriptedGui('al_r3_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r3_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r3_sub_5_button"
+						onclick = "[GetScriptedGui('al_r3_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r3_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r3_sub_6_button"
+						onclick = "[GetScriptedGui('al_r3_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r3_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r4_button"
+						onclick = "[GetScriptedGui('al_rrank_r4_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r4_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r4_sub_1_button"
+						onclick = "[GetScriptedGui('al_r4_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r4_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r4_sub_2_button"
+						onclick = "[GetScriptedGui('al_r4_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r4_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r4_sub_3_button"
+						onclick = "[GetScriptedGui('al_r4_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r4_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r4_sub_4_button"
+						onclick = "[GetScriptedGui('al_r4_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r4_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r4_sub_5_button"
+						onclick = "[GetScriptedGui('al_r4_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r4_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r4_sub_6_button"
+						onclick = "[GetScriptedGui('al_r4_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r4_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r5_button"
+						onclick = "[GetScriptedGui('al_rrank_r5_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r5_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r5_sub_1_button"
+						onclick = "[GetScriptedGui('al_r5_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r5_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r5_sub_2_button"
+						onclick = "[GetScriptedGui('al_r5_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r5_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r5_sub_3_button"
+						onclick = "[GetScriptedGui('al_r5_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r5_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r5_sub_4_button"
+						onclick = "[GetScriptedGui('al_r5_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r5_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r5_sub_5_button"
+						onclick = "[GetScriptedGui('al_r5_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r5_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r5_sub_6_button"
+						onclick = "[GetScriptedGui('al_r5_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r5_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r6_button"
+						onclick = "[GetScriptedGui('al_rrank_r6_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r6_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r6_sub_1_button"
+						onclick = "[GetScriptedGui('al_r6_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r6_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r6_sub_2_button"
+						onclick = "[GetScriptedGui('al_r6_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r6_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r6_sub_3_button"
+						onclick = "[GetScriptedGui('al_r6_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r6_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r6_sub_4_button"
+						onclick = "[GetScriptedGui('al_r6_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r6_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r6_sub_5_button"
+						onclick = "[GetScriptedGui('al_r6_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r6_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r6_sub_6_button"
+						onclick = "[GetScriptedGui('al_r6_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r6_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r7_button"
+						onclick = "[GetScriptedGui('al_rrank_r7_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r7_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r7_sub_1_button"
+						onclick = "[GetScriptedGui('al_r7_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r7_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r7_sub_2_button"
+						onclick = "[GetScriptedGui('al_r7_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r7_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r7_sub_3_button"
+						onclick = "[GetScriptedGui('al_r7_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r7_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r7_sub_4_button"
+						onclick = "[GetScriptedGui('al_r7_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r7_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r7_sub_5_button"
+						onclick = "[GetScriptedGui('al_r7_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r7_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r7_sub_6_button"
+						onclick = "[GetScriptedGui('al_r7_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r7_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r8_button"
+						onclick = "[GetScriptedGui('al_rrank_r8_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r8_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r8_sub_1_button"
+						onclick = "[GetScriptedGui('al_r8_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r8_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r8_sub_2_button"
+						onclick = "[GetScriptedGui('al_r8_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r8_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r8_sub_3_button"
+						onclick = "[GetScriptedGui('al_r8_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r8_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r8_sub_4_button"
+						onclick = "[GetScriptedGui('al_r8_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r8_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r8_sub_5_button"
+						onclick = "[GetScriptedGui('al_r8_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r8_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r8_sub_6_button"
+						onclick = "[GetScriptedGui('al_r8_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r8_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r9_button"
+						onclick = "[GetScriptedGui('al_rrank_r9_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r9_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r9_sub_1_button"
+						onclick = "[GetScriptedGui('al_r9_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r9_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r9_sub_2_button"
+						onclick = "[GetScriptedGui('al_r9_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r9_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r9_sub_3_button"
+						onclick = "[GetScriptedGui('al_r9_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r9_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r9_sub_4_button"
+						onclick = "[GetScriptedGui('al_r9_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r9_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r9_sub_5_button"
+						onclick = "[GetScriptedGui('al_r9_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r9_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r9_sub_6_button"
+						onclick = "[GetScriptedGui('al_r9_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r9_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r10_button"
+						onclick = "[GetScriptedGui('al_rrank_r10_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r10_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r10_sub_1_button"
+						onclick = "[GetScriptedGui('al_r10_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r10_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r10_sub_2_button"
+						onclick = "[GetScriptedGui('al_r10_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r10_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r10_sub_3_button"
+						onclick = "[GetScriptedGui('al_r10_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r10_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r10_sub_4_button"
+						onclick = "[GetScriptedGui('al_r10_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r10_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r10_sub_5_button"
+						onclick = "[GetScriptedGui('al_r10_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r10_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r10_sub_6_button"
+						onclick = "[GetScriptedGui('al_r10_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r10_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r11_button"
+						onclick = "[GetScriptedGui('al_rrank_r11_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r11_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r11_sub_1_button"
+						onclick = "[GetScriptedGui('al_r11_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r11_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r11_sub_2_button"
+						onclick = "[GetScriptedGui('al_r11_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r11_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r11_sub_3_button"
+						onclick = "[GetScriptedGui('al_r11_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r11_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r11_sub_4_button"
+						onclick = "[GetScriptedGui('al_r11_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r11_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r11_sub_5_button"
+						onclick = "[GetScriptedGui('al_r11_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r11_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r11_sub_6_button"
+						onclick = "[GetScriptedGui('al_r11_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r11_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r12_button"
+						onclick = "[GetScriptedGui('al_rrank_r12_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r12_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r12_sub_1_button"
+						onclick = "[GetScriptedGui('al_r12_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r12_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r12_sub_2_button"
+						onclick = "[GetScriptedGui('al_r12_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r12_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r12_sub_3_button"
+						onclick = "[GetScriptedGui('al_r12_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r12_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r12_sub_4_button"
+						onclick = "[GetScriptedGui('al_r12_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r12_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r12_sub_5_button"
+						onclick = "[GetScriptedGui('al_r12_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r12_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r12_sub_6_button"
+						onclick = "[GetScriptedGui('al_r12_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r12_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r13_button"
+						onclick = "[GetScriptedGui('al_rrank_r13_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r13_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r13_sub_1_button"
+						onclick = "[GetScriptedGui('al_r13_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r13_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r13_sub_2_button"
+						onclick = "[GetScriptedGui('al_r13_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r13_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r13_sub_3_button"
+						onclick = "[GetScriptedGui('al_r13_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r13_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r13_sub_4_button"
+						onclick = "[GetScriptedGui('al_r13_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r13_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r13_sub_5_button"
+						onclick = "[GetScriptedGui('al_r13_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r13_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r13_sub_6_button"
+						onclick = "[GetScriptedGui('al_r13_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r13_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r14_button"
+						onclick = "[GetScriptedGui('al_rrank_r14_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r14_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r14_sub_1_button"
+						onclick = "[GetScriptedGui('al_r14_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r14_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r14_sub_2_button"
+						onclick = "[GetScriptedGui('al_r14_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r14_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r14_sub_3_button"
+						onclick = "[GetScriptedGui('al_r14_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r14_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r14_sub_4_button"
+						onclick = "[GetScriptedGui('al_r14_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r14_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r14_sub_5_button"
+						onclick = "[GetScriptedGui('al_r14_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r14_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r14_sub_6_button"
+						onclick = "[GetScriptedGui('al_r14_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r14_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_bottom = 4
+					margin_top = 4
+					button_regular_alt_yellow = {
+						blockoverride "primary_visible" {}
+						size = { 190 40 }
+						name = "al_rrank_r15_button"
+						onclick = "[GetScriptedGui('al_rrank_r15_sgui').Execute(GuiScope.End)]"
+						text = "al_rrank_r15_name"
+						fontsize = 11
+						tooltip = "al_rrank_button_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r15_sub_1_button"
+						onclick = "[GetScriptedGui('al_r15_sub_1_sgui').Execute(GuiScope.End)]"
+						text = "al_r15_sub_1_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r15_sub_2_button"
+						onclick = "[GetScriptedGui('al_r15_sub_2_sgui').Execute(GuiScope.End)]"
+						text = "al_r15_sub_2_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r15_sub_3_button"
+						onclick = "[GetScriptedGui('al_r15_sub_3_sgui').Execute(GuiScope.End)]"
+						text = "al_r15_sub_3_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r15_sub_4_button"
+						onclick = "[GetScriptedGui('al_r15_sub_4_sgui').Execute(GuiScope.End)]"
+						text = "al_r15_sub_4_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r15_sub_5_button"
+						onclick = "[GetScriptedGui('al_r15_sub_5_sgui').Execute(GuiScope.End)]"
+						text = "al_r15_sub_5_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 120 40 }
+						name = "al_r15_sub_6_button"
+						onclick = "[GetScriptedGui('al_r15_sub_6_sgui').Execute(GuiScope.End)]"
+						text = "al_r15_sub_6_name"
+						fontsize = 10
+						tooltip = "al_rrank_subtype_tooltip"
+						button_ignore = none
+					}
+				}
+			}
+		}
+	}
+}
