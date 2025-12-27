@@ -1,0 +1,188 @@
+﻿scv_release_small_vassal = {
+	ability = dip
+	
+	allow_multiple = no
+	
+	days = 1
+
+	potential = {
+		num_locations > 1
+		is_ai = no
+	}
+
+
+	select_trigger = {
+		looking_for_a = location
+		source = actor
+		target_flag = target_location
+		name = "scv_release_small_vassal_select_location"
+		column = {
+			data = name
+		}
+		column = {
+			data = rank
+		}
+		column = {
+			data = population
+		}
+		column = {
+			data = control
+		}
+		visible = {
+		}
+		map_color = {
+			lerp = {
+				min_color = define:NMapColors|MAP_COLOR_HIGH
+				max_color = define:NMapColors|MAP_COLOR_LOW
+				factor = local_control
+			}
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = character
+		source = actor
+		target_flag = target_character
+		name = "scv_release_small_vassal_select_character"
+		allow_null = yes
+		column = { 
+			data = character_ruler		}
+		default_sort = "adm"
+		visible = {
+			is_adult = yes
+			OR = {
+				is_courtier = yes
+				is_ruler = yes
+			}
+		}
+		enabled = {
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = culture
+		target_flag = target_culture
+		#for the AI we have an optimisation to only look through religions that are present. Human can look at all...but will have some disabled
+		source_ai_override = actor
+		source_flags_ai_override = include_any_present
+		name = "scv_release_small_vassal_select_culture"
+		column = {
+			data = name
+		}
+		column = {
+			data = culture_percentage_in_country
+		}
+		default_sort = culture_percentage_in_country
+		visible = {
+		}
+		map_mode = culture
+	}
+	
+	select_trigger = {
+		looking_for_a = religion
+		target_flag = target_religion
+		#for the AI we have an optimisation to only look through religions that are present. Human can look at all...but will have some disabled
+		source_ai_override = actor
+		source_flags_ai_override = include_any_present
+		name = "scv_release_small_vassal_select_religion"
+		column = {
+			data = name
+		}
+		column = {
+			data = religion_percentage_in_country
+		}
+		default_sort = religion_percentage_in_country
+		visible = {
+			is_religion_enabled = yes
+		}
+		map_mode = religion
+	}
+	
+	select_trigger = {
+		looking_for_a = government
+		target_flag = target_government
+		name = "scv_release_small_vassal_select_government"
+		none_available_msg_key = "convert_religion_no_religions"
+		column = {
+			data = name
+		}
+		default_sort = name
+		visible = {
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = subject_type
+		target_flag = target_subject_type
+		name = "scv_release_small_vassal_select_subject_type"
+		none_available_msg_key = "convert_religion_no_religions"
+		column = {
+			data = subject_type_icon
+		}
+		column = {
+			data = name
+		}
+		column = {
+			data = subject_type_attribute_column
+		}
+		default_sort = name
+		visible = {
+		}
+	}
+	
+	select_trigger = {
+		looking_for_a = dialect
+		target_flag = target_dialect
+		name = "scv_release_small_vassal_select_dialect"
+		allow_null = yes
+		none_available_msg_key = "change_liturgical_language_no_dialect"
+		column = {
+			data = name
+		}
+		column = {
+			data = power
+		}
+		default_sort = power
+		visible = {
+		}
+		enabled = {
+		}
+	}
+
+	#to encourage our people to move
+	country_modifier = {
+	}
+
+	#to make the destination more attractive
+	location_modifier = {
+	}
+	
+	
+	on_fully_activated = {
+		scope:target_location = {
+			create_country_from_location = {
+				set_capital = scope:target_location
+				set_court_language = scope:target_dialect
+				set_new_ruler = scope:target_character
+				
+				change_culture = scope:target_culture
+				change_religion = scope:target_religion
+				change_government_type = scope:target_government
+				
+				#add_opinion = {
+				#	target = scope:actor
+				#	modifier = opinion_benevolent_overlord
+				#}
+				
+				make_subject_of = {
+					target = scope:actor
+					type = scope:target_subject_type
+				}
+			}
+		}
+	}
+
+	map_marker = {
+		show_for_owner = yes
+	}
+}

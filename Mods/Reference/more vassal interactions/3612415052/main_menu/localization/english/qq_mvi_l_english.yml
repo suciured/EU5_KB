@@ -1,0 +1,40 @@
+﻿l_english:
+ #
+ #
+ #
+
+
+
+ mvi_transfer_vassal: "Transfer Subject"
+ dip_mvi_transfer_vassal_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ mvi_transfer_vassal_act: "Transfer [subject|e] to [SCOPE.sCountry('recipient').GetName]"
+ mvi_transfer_vassal_desc: "Transfer a [subject|e] to another [subject|e]"
+ mvi_transfer_vassal_effect_text: "[SCOPE.sCountry('recipient').GetName] received became the new [overlord|e] of [SCOPE.sCountry('target_country').GetName]"
+ mvi_transfer_vassal_effect_text_past: "[SCOPE.sCountry('recipient').GetName] has been the new [overlord|e] of [SCOPE.sCountry('target_country').GetName]"
+ PROPOSE_mvi_transfer_vassal: "Transfer Subject to $RECIPIENT$?\n$INFO$."
+
+  
+ mvi_send_settlers: "Send Settlers to Province"
+ dip_mvi_send_settlers_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ mvi_send_settlers_act: "Send settlers from [SCOPE.sCountry('actor').GetName] to go live in [SCOPE.sCountry('recipient').GetName]"
+ mvi_send_settlers_desc: "Send settlers to live and work in their [country|e]"
+ mvi_send_settlers_effect_text: "[SCOPE.sCountry('recipient').GetName] received settlers from [SCOPE.sCountry('actor').GetName] to come and live in their lands"
+ mvi_send_settlers_effect_text_past: "[SCOPE.sCountry('recipient').GetName] has been sent settlers by [SCOPE.sCountry('actor').GetName] to come and live in their lands"
+ PROPOSE_mvi_send_settlers: "Send settlers to $RECIPIENT$?\n$INFO$."
+  
+ mvi_send_settlers_to_location: "Send Settlers to Location"
+ dip_mvi_send_settlers_to_location_CATEGORY: "CATEGORY_SUBJECT_ACTIONS"
+ mvi_send_settlers_to_location_act: "Send settlers from [SCOPE.sCountry('actor').GetName] to go live in [SCOPE.sCountry('recipient').GetName]"
+ mvi_send_settlers_to_location_desc: "Send settlers to live and work in their [country|e]"
+ mvi_send_settlers_to_location_effect_text: "[SCOPE.sCountry('recipient').GetName] received settlers from [SCOPE.sCountry('actor').GetName] to come and live in their lands"
+ mvi_send_settlers_to_location_effect_text_past: "[SCOPE.sCountry('recipient').GetName] has been sent settlers by [SCOPE.sCountry('actor').GetName] to come and live in their lands"
+ PROPOSE_mvi_send_settlers_to_location: "Send settlers to $RECIPIENT$?\n$INFO$."
+ 
+ mvi_send_settlers_select_country: "Select [country|e] to send settlers to"
+ mvi_send_settlers_select_sender: "Select [province|e] to send settlers from:"
+ mvi_send_settlers_select_culture: "Select [culture|e] of settlers:"
+ mvi_send_settlers_select_religion: "Select [religion|e] of settlers:"
+ mvi_send_settlers_select_destination: "Select [province|e] to send settlers to:"
+ mvi_send_settlers_select_destination_location: "Select [location|e] to send settlers to:"
+ mvi_send_settlers_select_months_value: "Select a number of [months|e] to send settlers:"
+ #

@@ -1,0 +1,51 @@
+﻿l_english:
+ #
+ #
+ #
+ 
+ # Overwriting 
+ select_bribing_amount: "Select Amount:"
+ 
+ #scv_location_vassal_name: "[ROOT.GetCountry.GetName]"
+ 
+ # Name of Cabinet Action
+ scv_release_small_vassal: "Release Location as Vassal"
+ 
+ # Description
+ scv_release_small_vassal_desc: "This will release a [location|e] as an autonomous [subject|e]."
+ 
+ 
+ # Step 1 | Location
+ scv_release_small_vassal_select_location: "Select a [location|e] to serve as the capital:"
+ 
+ # Step 2 | Character
+ scv_release_small_vassal_select_character: "Select a [character|e] to rule this country:"
+ 
+ # Step 3 | Culture
+ scv_release_small_vassal_select_culture: "Select the [culture|e] for this country:"
+ 
+ # Step 4 | Religion
+ scv_release_small_vassal_select_religion: "Select the [religion|e] for this country:"
+ 
+ # Step 5 | Government
+ scv_release_small_vassal_select_government: "Select the [government|e] for this country:"
+ 
+ # Step 6 | Subject Type
+ scv_release_small_vassal_select_subject_type: "Select the [subject_type|e] for this country:"
+ 
+ # Step 7 | Court Language
+ scv_release_small_vassal_select_dialect: "Select the [court_language|e] for this country:"
+ 
+ # Step 8 | Confirm Cabinet Action
+ scv_release_small_vassal_action: "Release [SCOPE.sLocation('target_location').GetName] as a [subject|e]"
+ 
+ # Active Cabinet Action
+ scv_release_small_vassal_active: "Releasing [SCOPE.sLocation('target_location').GetName] as a [SCOPE.sSubjectType('target_subject_type').GetName]"
+ 
+ # Cabinet Action Progress
+ scv_release_small_vassal_action_progress: ""
+ scv_release_small_vassal_action_progress_wordier: ""
+ scv_release_small_vassal_action_progress_long_wordier: "Releasing [SCOPE.sLocation('target_location').GetName] as a [SCOPE.sSubjectType('target_subject_type').GetName]"
+ scv_release_small_vassal_action_progress_tooltip: "Releasing [SCOPE.sLocation('target_location').GetName] as a [SCOPE.sSubjectType('target_subject_type').GetName]"
+
+

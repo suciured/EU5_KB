@@ -1,0 +1,154 @@
+﻿mvi_send_settlers = {
+
+	type = subject
+	category = CATEGORY_SUBJECT_ACTIONS
+
+	ai_tick = never
+
+	potential = {
+		scope:actor = {
+			country_type = location
+		}
+	}
+
+	allow = {
+	}
+
+	select_trigger = {
+		looking_for_a = country
+		interaction_source_list = {
+			scope:actor = {
+				every_subject = {
+					add_to_list = source
+				}
+			}
+		}
+		target_flag = recipient
+		name = "mvi_send_settlers_select_country"
+		column = {
+			data = name
+		}
+		visible = {
+		}
+        enabled = {
+			subject_loyalty >= MIN_SUBJECT_LOYALTY_FOR_ACTION
+			liberty_desire < MAX_SUBJECT_LIBERTY_DESIRE_FOR_ACTION
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = province
+		source = actor
+		target_flag = target_sender_province
+		name = "mvi_send_settlers_select_sender"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = culture
+		source = actor
+		target_flag = target_culture
+		name = "mvi_send_settlers_select_culture"
+		column = {
+			data = name
+		}
+		column = {
+			data = culture_percentage_in_country
+		}
+		default_sort = culture_percentage_in_country
+		visible = {
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = religion
+		source = actor
+		target_flag = target_religion
+		name = "mvi_send_settlers_select_religion"
+		column = {
+			data = name
+		}
+		column = {
+			data = religion_percentage_in_country
+		}
+		default_sort = religion_percentage_in_country
+		visible = {
+		}
+	}
+
+	select_trigger = {
+		looking_for_a = province
+		source = recipient
+		target_flag = target_destination_province
+		name = "mvi_send_settlers_select_destination"
+		column = {
+			data = name
+		}
+		column = {
+			data = population
+		}
+		visible = {
+		}
+	}
+	
+	#select_trigger = {
+	#	looking_for_a = value
+	#	target_flag = target_settlers_value
+	#	name = "mvi_settlers_amount"
+	#	min = 1
+	#	max = 50
+	#	step = 1
+	#	default = {
+	#		value = 10
+	#	}
+	#	ai_override_value = 10
+	#}
+	
+	select_trigger = {
+		looking_for_a = value
+		target_flag = target_months_value
+		name = "mvi_months_amount"
+		min = 1
+		max = 60
+		step = 1
+		default = {
+			value = 24
+		}
+		ai_override_value = 24
+	}
+	
+	cooldown = {
+		type = mvi_send_settlers
+		months = scope:target_months_value
+	}
+
+	effect = {
+		if = {
+			limit = {
+				exists = scope:target_destination_province
+			}
+			add_migration = {
+				owner = scope:actor
+				from = scope:target_sender_province.province_definition
+				culture = scope:target_culture
+				religion = scope:target_religion
+				to = scope:target_destination_province.province_definition
+				type = pop_type:peasants
+				amount = 0.010
+				months = scope:target_months_value
+			}
+		}
+	}
+	
+	ai_will_do = {
+		#inertia
+		add = -10
+	}
+}
