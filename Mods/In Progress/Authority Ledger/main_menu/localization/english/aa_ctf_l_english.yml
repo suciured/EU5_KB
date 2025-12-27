@@ -1,0 +1,352 @@
+﻿l_english:
+ #
+ #
+ # only territorial designation
+ #
+ #
+ ctf_loc_cons_apr: "$ADJ$ $PREFIX$$RANK$"
+ ctf_loc_cons_apr_map: "$ADJ$ $PREFIX$$RANK$"
+ #
+ ctf_loc_cons_n: "$NAME$"
+ ctf_loc_cons_n_map: "$NAME$"
+ #
+ ctf_loc_cons_par: "$PREFIX$$ADJ$ $RANK$"
+ ctf_loc_cons_par_map: "$PREFIX$$ADJ$ $RANK$"
+ #
+ ctf_loc_cons_pn: "$PREFIX$$NAME$"
+ ctf_loc_cons_pn_map: "$PREFIX$$NAME$"
+ #
+ ctf_loc_cons_pnr: "$PREFIX$$NAME$ $RANK$"
+ ctf_loc_cons_pnr_map: "$PREFIX$$NAME$ $RANK$"
+ #
+ ctf_loc_cons_pr: "$PREFIX$$RANK$"
+ ctf_loc_cons_pr_map: "$PREFIX$$RANK$"
+ #
+ ctf_loc_cons_pron: "$PREFIX$$RANK$ of $ARTICLE$$NAME$"
+ ctf_loc_cons_pron_map: "$NAME$"
+ #
+ ctf_loc_cons_prota: "$PREFIX$$RANK$ of the $ADJ$"
+ ctf_loc_cons_prota_map: "$ADJ$"
+ #
+ ctf_loc_cons_protas: "$PREFIX$$RANK$ of the $ADJ$s"
+ ctf_loc_cons_protas_map: "$ADJ$s"
+ #
+ #
+ #
+ ctf_loc_why: "[SCOPE.sCountry('Actor')]"
+ #
+ ctf_loc_pl_ies: "ies"
+ ctf_loc_pl_es: "es"
+ ctf_loc_pl_s: "s"
+ ctf_loc_pl: ""
+ #
+ #
+ # [Custom('ctf_loc_cpre')]
+ ctf_loc_cpre_united: "United "
+ ctf_loc_cpre: ""
+ #
+ #
+ #
+ ctf_loc_clan: "Clan"
+ ctf_loc_clan_ADJ: "clan" 
+ #
+ ctf_loc_commonwealth: "Commonwealth"
+ ctf_loc_commonwealth_ADJ: "commonwealth" 
+ #
+ ctf_loc_confederation: "Confederation" 
+ ctf_loc_confederation_ADJ: "confederal"
+ #
+ ctf_loc_crown: "Crown" 
+ ctf_loc_crown_ADJ: "coronal" 
+ #
+ ctf_loc_domain: "Domain" 
+ ctf_loc_domain_ADJ: "domainal"
+ #
+ ctf_loc_dominion: "Dominion" 
+ ctf_loc_dominion_ADJ: "dominial" 
+ #
+ ctf_loc_dynasty: "Dynasty" 
+ ctf_loc_dynasty_ADJ: "dynastic" 
+ #
+ ctf_loc_federation: "Federation" 
+ ctf_loc_federation_ADJ: "federal"
+ #
+ ctf_loc_fiefdom: "Fiefdom" 
+ ctf_loc_fiefdom_ADJ: "fieffal"
+ #
+ ctf_loc_league: "League" 
+ ctf_loc_league_ADJ: "league" 
+ #
+ ctf_loc_order: "Order" 
+ ctf_loc_order_ADJ: "order" 
+ #
+ ctf_loc_state: "State" 
+ ctf_loc_state_ADJ: "state" 
+ #
+ ctf_loc_realm: "Realm" 
+ ctf_loc_realm_ADJ: "realm" 
+ #
+ ctf_loc_union: "Union" 
+ ctf_loc_union_ADJ: "union" 
+ #
+ #
+ #
+ ctf_loc_imperium: "Imperium" 
+ ctf_loc_imperium_ADJ: "imperial" 
+ #
+ ctf_loc_kingship: "Kingship" 
+ ctf_loc_kingship_ADJ: "kingly" 
+ #
+ ctf_loc_princedom: "Princedom" 
+ ctf_loc_princedom_ADJ: "princely" 
+ #
+ ctf_loc_dukedom: "Dukedom" 
+ ctf_loc_dukedom_ADJ: "ducal" 
+ #
+ ctf_loc_march: "March" 
+ ctf_loc_march_ADJ: "marcher" 
+ #
+ ctf_loc_judgedom: "Judgedom" 
+ ctf_loc_judgedom_ADJ: "judicial" 
+ #
+ ctf_loc_lorddom: "Lorddom" 
+ ctf_loc_lorddom_ADJ: "lordly" 
+ #
+ #
+ # title + territorial designation
+ #
+ #
+ ctf_loc_hegemon: "Hegemony" 
+ ctf_loc_hegemon_ADJ: "hegemonic" 
+ ctf_loc_hegemon_ruler_male: "Hegemon" 
+ ctf_loc_hegemon_ruler_female: "Hegemoness" 
+ #
+ ctf_loc_arch_emperor: "Arch-Empire" 
+ ctf_loc_arch_emperor_ADJ: "arch-imperial" 
+ ctf_loc_arch_emperor_ruler_male: "Arch-Emperor" 
+ ctf_loc_arch_emperor_ruler_female: "Arch-Empress" 
+ #
+ ctf_loc_emperor: "Empire" 
+ ctf_loc_emperor_ADJ: "imperial" 
+ ctf_loc_emperor_ruler_male: "Emperor" 
+ ctf_loc_emperor_ruler_female: "Empress" 
+ #
+ ctf_loc_emperor_king: "Empire" 
+ ctf_loc_emperor_king_ADJ: "imperial-royal" 
+ ctf_loc_emperor_king_ruler_male: "Emperor-King" 
+ ctf_loc_emperor_king_ruler_female: "Empress-Queen" 
+ #
+ ctf_loc_king_emperor: "Kingdom" 
+ ctf_loc_king_emperor_ADJ: "royal-imperial" 
+ ctf_loc_king_emperor_ruler_male: "King-Emperor" 
+ ctf_loc_king_emperor_ruler_female: "Queen-Empress" 
+ #
+ ctf_loc_arch_king: "Arch-Kingdom" 
+ ctf_loc_arch_king_ADJ: "arch-royal" 
+ ctf_loc_arch_king_ruler_male: "Arch-King" 
+ ctf_loc_arch_king_ruler_female: "Arch-Queen" 
+ #
+ ctf_loc_great_king_prefix: "Great"
+ ctf_loc_great_king: "Kingdom" 
+ ctf_loc_great_king_ADJ: "great royal" 
+ ctf_loc_great_king_ruler_male: "Great King" 
+ ctf_loc_great_king_ruler_female: "Great Queen" 
+ #
+ ctf_loc_high_king_prefix: "High"
+ ctf_loc_high_king: "Kingdom" 
+ ctf_loc_high_king_ADJ: "high royal" 
+ ctf_loc_high_king_ruler_male: "High King" 
+ ctf_loc_high_king_ruler_female: "High Queen" 
+ #
+ ctf_loc_king: "Kingdom" 
+ ctf_loc_king_ADJ: "royal" 
+ ctf_loc_king_ruler_male: "King" 
+ ctf_loc_king_ruler_female: "Queen" 
+ #
+ ctf_loc_crown_prince_prefix: "Crown"
+ ctf_loc_crown_prince: "Principality" 
+ ctf_loc_crown_prince_ADJ: "crown princely" 
+ ctf_loc_crown_prince_ruler_male: "Crown Prince" 
+ ctf_loc_crown_prince_ruler_female: "Crown Princess" 
+ #
+ ctf_loc_great_prince_prefix: "Great"
+ ctf_loc_great_prince: "Principality" 
+ ctf_loc_great_prince_ADJ: "great princely" 
+ ctf_loc_great_prince_ruler_male: "Great Prince" 
+ ctf_loc_great_prince_ruler_female: "Great Princess" 
+ #
+ ctf_loc_grand_prince_prefix: "Grand"
+ ctf_loc_grand_prince: "Principality" 
+ ctf_loc_grand_prince_ADJ: "grand princely" 
+ ctf_loc_grand_prince_ruler_male: "Grand Prince" 
+ ctf_loc_grand_prince_ruler_female: "Grand Princess" 
+ #
+ ctf_loc_prince: "Principality" 
+ ctf_loc_prince_ADJ: "princely" 
+ ctf_loc_prince_ruler_male: "Prince" 
+ ctf_loc_prince_ruler_female: "Princess" 
+ #
+ ctf_loc_viceroy: "Viceroyalty" 
+ ctf_loc_viceroy_ADJ: "viceregal" 
+ ctf_loc_viceroy_ruler_male: "Viceroy" 
+ ctf_loc_viceroy_ruler_female: "Vicereine" 
+ #
+ ctf_loc_archduke: "Archduchy" 
+ ctf_loc_archduke_ADJ: "archducal" 
+ ctf_loc_archduke_ruler_male: "Archduke" 
+ ctf_loc_archduke_ruler_female: "Archduchess" 
+ #
+ ctf_loc_grand_duke_prefix: "Grand"
+ ctf_loc_grand_duke: "Duchy" 
+ ctf_loc_grand_duke_ADJ: "grand ducal" 
+ ctf_loc_grand_duke_ruler_male: "Grand Duke" 
+ ctf_loc_grand_duke_ruler_female: "Grand Duchess" 
+ #
+ ctf_loc_duke_palatine: "Duchy Palatine" 
+ ctf_loc_duke_palatine_ADJ: "ducal palatine" 
+ ctf_loc_duke_palatine_ruler_male: "Duke Palatine" 
+ ctf_loc_duke_palatine_ruler_female: "Duchess Palatine" 
+ #
+ ctf_loc_duke: "Duchy" 
+ ctf_loc_duke_ADJ: "ducal" 
+ ctf_loc_duke_ruler_male: "Duke" 
+ ctf_loc_duke_ruler_female: "Duchess" 
+ #
+ ctf_loc_viceduke: "Viceduchy" 
+ ctf_loc_viceduke_ADJ: "viceducal" 
+ ctf_loc_viceduke_ruler_male: "Viceduke" 
+ ctf_loc_viceduke_ruler_female: "Viceduchess" 
+ #
+ ctf_loc_marquess: "Marquessate" 
+ ctf_loc_marquess_ADJ: "marquesal" 
+ ctf_loc_marquess_ruler_male: "Marquess" 
+ ctf_loc_marquess_ruler_female: "Marchioness" 
+ #
+ ctf_loc_margrave: "Margraviate" 
+ ctf_loc_margrave_ADJ: "margravial" 
+ ctf_loc_margrave_ruler_male: "Margrave" 
+ ctf_loc_margrave_ruler_female: "Margravine" 
+ #
+ ctf_loc_landgrave: "Landgraviate" 
+ ctf_loc_landgrave_ADJ: "landgravial" 
+ ctf_loc_landgrave_ruler_male: "Landgrave" 
+ ctf_loc_landgrave_ruler_female: "Landgravine" 
+ #
+ ctf_loc_marcher_lord: "March" 
+ ctf_loc_marcher_lord_ADJ: "marcher" 
+ ctf_loc_marcher_lord_ruler_male: "Marcher Lord" 
+ ctf_loc_marcher_lord_ruler_female: "Marcher Lady" 
+ #
+ ctf_loc_count_palatine: "County Palatine" 
+ ctf_loc_count_palatine_ADJ: "comital palatine" 
+ ctf_loc_count_palatine_ruler_male: "Count Palatine" 
+ ctf_loc_count_palatine_ruler_female: "Countess Palatine" 
+ #
+ ctf_loc_burgrave: "Burgraviate" 
+ ctf_loc_burgrave_ADJ: "burgravial" 
+ ctf_loc_burgrave_ruler_male: "Burgrave" 
+ ctf_loc_burgrave_ruler_female: "Burgravine" 
+ #
+ ctf_loc_earl: "Earldom" 
+ ctf_loc_earl_ADJ: "comital" 
+ ctf_loc_earl_ruler_male: "Earl" 
+ ctf_loc_earl_ruler_female: "Countess" 
+ #
+ ctf_loc_judge: "Judicate" 
+ ctf_loc_judge_ADJ: "judicial" 
+ ctf_loc_judge_ruler_male: "Judge" 
+ ctf_loc_judge_ruler_female: "Judge" 
+ #
+ ctf_loc_count: "County" 
+ ctf_loc_count_ADJ: "comital" 
+ ctf_loc_count_ruler_male: "Count" 
+ ctf_loc_count_ruler_female: "Countess" 
+ #
+ ctf_loc_viscount: "Viscounty" 
+ ctf_loc_viscount_ADJ: "viscomital" 
+ ctf_loc_viscount_ruler_male: "Viscount" 
+ ctf_loc_viscount_ruler_female: "Viscountess" 
+ #
+ ctf_loc_baron: "Barony" 
+ ctf_loc_baron_ADJ: "baronial" 
+ ctf_loc_baron_ruler_male: "Baron" 
+ ctf_loc_baron_ruler_female: "Baroness" 
+ #
+ ctf_loc_palatine: "Palatinate" 
+ ctf_loc_palatine_ADJ: "palatine" 
+ ctf_loc_palatine_ruler_male: "Palatine" 
+ ctf_loc_palatine_ruler_female: "Palatine" 
+ #
+ ctf_loc_lord: "Lordship" 
+ ctf_loc_lord_ADJ: "lordly" 
+ ctf_loc_lord_ruler_male: "Lord" 
+ ctf_loc_lord_ruler_female: "Lady" 
+ #
+ #
+ #
+ #
+ #
+ #
+ ctf_loc_lord_protector: "Protectorate" 
+ ctf_loc_lord_protector_ADJ: "protectoral" 
+ ctf_loc_lord_protector_ruler_male: "Lord Protector" 
+ ctf_loc_lord_protector_ruler_female: "Lady Protector" 
+ #
+ ctf_loc_lord_lieutenant: "Lieutenancy" 
+ ctf_loc_lord_lieutenant_ADJ: "lieutenantial" 
+ ctf_loc_lord_lieutenant_ruler_male: "Lord Lieutenant" 
+ ctf_loc_lord_lieutenant_ruler_female: "Lady Lieutenant" 
+ #
+ ctf_loc_grand_viceroy_prefix: "Grand"
+ ctf_loc_grand_viceroy: "Viceroyalty" 
+ ctf_loc_grand_viceroy_ADJ: "grand viceregal" 
+ ctf_loc_grand_viceroy_ruler_male: "Grand Viceroy" 
+ ctf_loc_grand_viceroy_ruler_female: "Grand Vicereine" 
+ #
+ ctf_loc_captain_general: "Captaincy-General" 
+ ctf_loc_captain_general_ADJ: "captainial" 
+ ctf_loc_captain_general_ruler_male: "Captain-General" 
+ ctf_loc_captain_general_ruler_female: "Captain-General" 
+ #
+ ctf_loc_captain: "Captaincy" 
+ ctf_loc_captain_ADJ: "captainial" 
+ ctf_loc_captain_ruler_male: "Captain" 
+ ctf_loc_captain_ruler_female: "Captain" 
+ #
+ ctf_loc_general_governor_prefix: "General"
+ ctf_loc_general_governor: "Governorate" 
+ ctf_loc_general_governor_ADJ: "gubernatorial" 
+ ctf_loc_general_governor_ruler_male: "General Governor" 
+ ctf_loc_general_governor_ruler_female: "General Governess" 
+ #
+ ctf_loc_governor_general: "Governorate-General" 
+ ctf_loc_governor_general_ADJ: "gubernatorial" 
+ ctf_loc_governor_general_ruler_male: "Governor-General" 
+ ctf_loc_governor_general_ruler_female: "Governess-General" 
+ #
+ ctf_loc_governor: "Governorate" 
+ ctf_loc_governor_ADJ: "gubernatorial" 
+ ctf_loc_governor_ruler_male: "Governor" 
+ ctf_loc_governor_ruler_female: "Governess" 
+ #
+ ctf_loc_lieutenant_governor_prefix: "Lieutenant"
+ ctf_loc_lieutenant_governor: "Governorate" 
+ ctf_loc_lieutenant_governor_ADJ: "lieutenant gubernatorial" 
+ ctf_loc_lieutenant_governor_ruler_male: "Lieutenant Governor" 
+ ctf_loc_lieutenant_governor_ruler_female: "Lieutenant Governess" 
+ #
+ ctf_loc_general_lieutenant_prefix: "General"
+ ctf_loc_general_lieutenant: "Lieutenancy" 
+ ctf_loc_general_lieutenant_ADJ: "lieutenantial" 
+ ctf_loc_general_lieutenant_ruler_male: "General Lieutenant" 
+ ctf_loc_general_lieutenant_ruler_female: "General Lieutenant" 
+ #
+ ctf_loc_lieutenant_general: "Lieutenancy-General" 
+ ctf_loc_lieutenant_general_ADJ: "lieutenantial" 
+ ctf_loc_lieutenant_general_ruler_male: "Lieutenant-General" 
+ ctf_loc_lieutenant_general_ruler_female: "Lieutenant-General" 
+ #
+ ctf_loc_lieutenant: "Lieutenancy" 
+ ctf_loc_lieutenant_ADJ: "lieutenantial" 
+ ctf_loc_lieutenant_ruler_male: "Lieutenant" 
+ ctf_loc_lieutenant_ruler_female: "Lieutenant" 
