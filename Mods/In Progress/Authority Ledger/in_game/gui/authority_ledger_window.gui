@@ -1,5 +1,5 @@
 lateralview = {
-	name = "authority_ledger_lateralview"
+	name = "authority_ledger"
 
 	blockoverride "panel_header" {
 		window_header_alt = {
