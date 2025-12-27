@@ -2075,13 +2075,6 @@ lateralview = {
 							}
 
 							button_regular = {
-								size = { 22 22 }
-								text = ""
-								tooltip_enabled = no
-								blockoverride "button_text" { visible = no }
-								blockoverride "button_regular_texture" {
-									modify_texture = { using = color_red_texture }
-								}
 								size = { 110 22 }
 								text = "AUTHORITY_LEDGER_BUTTON"
 								fontsize = 11
