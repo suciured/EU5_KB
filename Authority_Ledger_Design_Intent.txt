@@ -93,6 +93,9 @@ Button labels must display LOCALIZED names, not raw keys.
 
 --------------------------------------------------------------------
 
-You must only create mod files based on the reference mods OR the template mod. Also do not make up any information and only use what is given to you via KB TXT files. this includes everything in the base file 
+You must only create mod files based on the reference mods OR the template mod. Also do not make up any information and only use what is given to you via KB TXT files. this includes everything in the base file such as plugins and core 
+You can also use the Raw files as another layer of reference 
 
 END OF DESIGN INTENT
+
+
