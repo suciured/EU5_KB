@@ -385,6 +385,13 @@ REPLACE:country_flavor = {
 			has_variable = rank_duchy_trade_league
 		}
 	}
+text = {
+		localization_key = rank_kingdom_realm
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_realm
+		}
+	}
 	text = {
 		localization_key = rank_kingdom_client_kingdom
 		trigger = {
