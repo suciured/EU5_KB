@@ -1,0 +1,120 @@
+lateralview_full = {
+	name = "authority_ledger_list_view"
+
+	blockoverride "panel_header" {
+		window_header_alt = {
+			blockoverride "header_text" {
+				text = "AUTHORITY_LEDGER_TAB"
+			}
+			blockoverride "window_header_alt_color_texture"{
+				using = color_default_brown_texture
+			}
+		}
+	}
+
+	blockoverride "panel_content" {
+		vbox = {
+			header_main_tabs = { #
+				blockoverride "content" {
+					using = ledger_tabs_template
+				}
+			}
+
+			vbox = {
+				using = layoutpolicy_expanding
+				using = bg_main_inner_alt
+				using = window_main_tabs_margin_alt
+				margin_top = 10
+
+				hbox = {
+					margin = { 20 5 }
+					spacing = 10
+
+					text_single = {
+						layoutpolicy_horizontal = expanding
+						autoresize = no
+						align = left|nobaseline
+						text = "AUTHORITY_LEDGER_COUNTRY_COLUMN"
+						default_format = "#subtle_name"
+					}
+
+					text_single = {
+						size = { 140 -1 }
+						autoresize = no
+						align = right|nobaseline
+						text = "AUTHORITY_LEDGER_LOCATIONS_COLUMN"
+						default_format = "#subtle_name"
+					}
+
+					text_single = {
+						size = { 120 -1 }
+						autoresize = no
+						align = right|nobaseline
+						text = "AUTHORITY_LEDGER_BASIC_RANK_COLUMN"
+						default_format = "#subtle_name"
+					}
+				}
+
+				scrollarea = {
+					using = layoutpolicy_expanding
+					scrollbarpolicy_horizontal = always_off
+
+					scrollbar_vertical = {
+						using = Scrollbar_Vertical
+					}
+
+					scrollwidget = {
+						dynamicgridbox = {
+							size = { 100% -1 }
+							datamodel = "[CountriesListView.GetCountriesListView]"
+							item = {
+								using = ledger_item_template
+								blockoverride "ledger_item_content"{
+									widget = {
+										using = layoutpolicy_expanding
+										hbox = {
+											margin = { 10 0 }
+											spacing = 10
+
+											country_flag_small = {
+												datacontext = "[CountriesListViewItem.GetCountry]"
+											}
+
+											text_single = {
+												layoutpolicy_horizontal = expanding
+												autoresize = no
+												align = left|nobaseline
+
+												text = "[CountriesListViewItem.GetCountry.GetLongNameWithNoTooltip]"
+												default_format = "#yellow_titles"
+												datacontext = "[CountriesListViewItem.GetCountry]"
+												tooltipwidget = {
+													using = CountryTooltip
+												}
+											}
+
+											text_single = {
+												size = { 140 -1 }
+												autoresize = no
+												align = right|nobaseline
+												text = "[CountriesListViewItem.GetCountry.GetOwnedLocationCount|L]"
+												default_format = "#subtle_name"
+											}
+
+											text_single = {
+												size = { 120 -1 }
+												autoresize = no
+												align = right|nobaseline
+												raw_text = "[Concatenate('R', ToString_int32(Min_int32(Add_int32('(int32)1', Divide_int32(PdxGuiWidget.GetIndexInDataModel, Divide_int32(Add_int32(GetDataModelSize(CountriesListView.GetCountriesListView), '(int32)14'), '(int32)15')))), '(int32)15')))]"
+												default_format = "#color_yellow;bold"
+											}
+										}
+									}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
