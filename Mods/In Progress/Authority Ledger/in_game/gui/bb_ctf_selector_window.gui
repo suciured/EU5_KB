@@ -872,6 +872,17 @@ window = {
 						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
 						button_ignore = none
 					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_realm"
+						onclick = "[GetScriptedGui('ctf_rank_realm_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_realm_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_realm"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
 				}
 				expand = {}
 				text_single = {
