@@ -1,0 +1,11 @@
+﻿{
+	"name":	"Roman Revived",
+	"id":	"Roman.Revived",
+	"version":	"",
+	"supported_game_version":	"",
+	"short_description":	"Basic mod that adds Roman Culture + others",
+	"tags":	["Alternative history", "Culture & Art", "Historical", "Religion"],
+	"relationships":	[],
+	"game_custom_data":	{
+}
+}

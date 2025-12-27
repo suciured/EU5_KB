@@ -1,2 +1,2 @@
 ﻿l_english:
-  AUTHORITY_LEDGER_COUNTRY_NAME:0 "[Custom('country_flavor')] of $NAME$"
+  AUTHORITY_LEDGER_COUNTRY_NAME:0 "[Custom('country_flavor')] of [GetCountryName]"
