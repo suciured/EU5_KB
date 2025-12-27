@@ -24,11 +24,27 @@ template ledger_tabs_template {
 		onclick = "[OpenLateralView('country_list')]"
 		down = "[IsLateralViewOpened('country_list')]"
 	}
-	
+
 	button_main_tab_alt = {
 		using = layoutpolicy_expanding
 		blockoverride "tab_text"{
 			text = "AUTHORITY_LEDGER_TAB"
+		}
+
+		enabled = "[Not(HasGameRuleFlag('limit_ledger'))]"
+		tooltip_enabled = "[HasGameRuleFlag('limit_ledger')]"
+		tooltipwidget = {
+			using = LimitLedgersTooltip
+		}
+
+		onclick = "[OpenLateralView('authority_ledger_list')]"
+		down = "[IsLateralViewOpened('authority_ledger_list')]"
+	}
+	
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "SCORE_TAB"
 		}
 		tooltip_enabled = no
 		onclick = "[OpenLateralView('score_view')]"
