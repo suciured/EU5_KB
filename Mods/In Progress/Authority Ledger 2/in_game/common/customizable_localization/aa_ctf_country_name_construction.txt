@@ -1,0 +1,73 @@
+REPLACE:country_name_construction = {
+
+	#the REPLACE command is used to replace the original country flavor file
+	
+	type = country
+
+	text = {
+		localization_key = AUTHORITY_LEDGER_COUNTRY_NAME
+		fallback = yes
+	}
+
+}
+
+ctf_loc_cpre = {
+	
+	type = country
+	
+	text = {
+		localization_key = ctf_loc_cpre_united
+		trigger = {
+			has_variable = ctf_var_cpre_united
+		}
+	}
+	
+	text = {
+		localization_key = ctf_loc_cpre
+		fallback = yes
+	}
+	
+}
+
+# y -> ies
+# 0 -> -es
+# 0 -> -s
+ctf_loc_pl = {
+	
+	type = country
+
+	## -ies
+	#text = {
+	#	localization_key = ctf_loc_pl_ies
+	#	trigger = {
+	#		has_variable = ctf_var_rplu
+	#	}
+	#}
+	
+	# Return Plural -es
+	text = {
+		localization_key = ctf_loc_pl_es
+		trigger = {
+			has_variable = ctf_var_rplu
+			OR = {
+				has_variable = ctf_var_march
+				has_variable = ctf_var_marcher_lord
+			}
+		}
+	}
+
+	# Return Plural -s
+	text = {
+		localization_key = ctf_loc_pl_s
+		trigger = {
+			has_variable = ctf_var_rplu
+		}
+	}
+	
+	# Return Singular
+	text = {
+		localization_key = ctf_loc_pl
+		fallback = yes
+	}
+	
+}

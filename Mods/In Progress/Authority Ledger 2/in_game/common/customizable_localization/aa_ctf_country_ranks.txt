@@ -1,0 +1,561 @@
+REPLACE:country_flavor = {
+	type = country
+	text = {
+		localization_key = rank_county_border_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_border_county
+		}
+	}
+	text = {
+		localization_key = rank_county_capital_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_capital_county
+		}
+	}
+	text = {
+		localization_key = rank_county_composite_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_composite_county
+		}
+	}
+	text = {
+		localization_key = rank_county_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_county
+		}
+	}
+	text = {
+		localization_key = rank_county_county_confederation
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_county_confederation
+		}
+	}
+	text = {
+		localization_key = rank_county_crown_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_crown_county
+		}
+	}
+	text = {
+		localization_key = rank_county_demesne
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_demesne
+		}
+	}
+	text = {
+		localization_key = rank_county_ducal_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_ducal_county
+		}
+	}
+	text = {
+		localization_key = rank_county_estate
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_estate
+		}
+	}
+	text = {
+		localization_key = rank_county_holding
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_holding
+		}
+	}
+	text = {
+		localization_key = rank_county_lordship
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_lordship
+		}
+	}
+	text = {
+		localization_key = rank_county_manor
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_manor
+		}
+	}
+	text = {
+		localization_key = rank_county_march_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_march_county
+		}
+	}
+	text = {
+		localization_key = rank_county_palatine_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_palatine_county
+		}
+	}
+	text = {
+		localization_key = rank_county_petty_lordship
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_petty_lordship
+		}
+	}
+	text = {
+		localization_key = rank_county_royal_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_royal_county
+		}
+	}
+	text = {
+		localization_key = rank_county_senior_county
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_senior_county
+		}
+	}
+	text = {
+		localization_key = rank_county_viscounty
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_viscounty
+		}
+	}
+	text = {
+		localization_key = rank_county_borough
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_borough
+		}
+	}
+	text = {
+		localization_key = rank_county_charter_town
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_charter_town
+		}
+	}
+	text = {
+		localization_key = rank_county_city_league
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_city_league
+		}
+	}
+	text = {
+		localization_key = rank_county_civic_republic
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_civic_republic
+		}
+	}
+	text = {
+		localization_key = rank_county_commercial_city
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_commercial_city
+		}
+	}
+	text = {
+		localization_key = rank_county_commune
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_commune
+		}
+	}
+	text = {
+		localization_key = rank_county_federal_city
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_federal_city
+		}
+	}
+	text = {
+		localization_key = rank_county_free_settlement
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_free_settlement
+		}
+	}
+	text = {
+		localization_key = rank_county_free_town
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_free_town
+		}
+	}
+	text = {
+		localization_key = rank_county_guild_republic
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_guild_republic
+		}
+	}
+	text = {
+		localization_key = rank_county_league_city
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_league_city
+		}
+	}
+	text = {
+		localization_key = rank_county_maritime_city_league
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_maritime_city_league
+		}
+	}
+	text = {
+		localization_key = rank_county_market_hamlet
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_market_hamlet
+		}
+	}
+	text = {
+		localization_key = rank_county_metropolitan_republic
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_metropolitan_republic
+		}
+	}
+	text = {
+		localization_key = rank_county_port_confederation
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_port_confederation
+		}
+	}
+	text = {
+		localization_key = rank_county_port_republic
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_port_republic
+		}
+	}
+	text = {
+		localization_key = rank_county_trade_city
+		trigger = {
+			country_rank_is_county = yes
+			has_variable = rank_county_trade_city
+		}
+	}
+	text = {
+		localization_key = rank_duchy_border_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_border_duchy
+		}
+	}
+	text = {
+		localization_key = rank_duchy_composite_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_composite_duchy
+		}
+	}
+	text = {
+		localization_key = rank_duchy_crown_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_crown_duchy
+		}
+	}
+	text = {
+		localization_key = rank_duchy_ducal_state
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_ducal_state
+		}
+	}
+	text = {
+		localization_key = rank_duchy_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_duchy
+		}
+	}
+	text = {
+		localization_key = rank_duchy_grand_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_grand_duchy
+		}
+	}
+	text = {
+		localization_key = rank_duchy_march
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_march
+		}
+	}
+	text = {
+		localization_key = rank_duchy_march_principality
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_march_principality
+		}
+	}
+	text = {
+		localization_key = rank_duchy_royal_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_royal_duchy
+		}
+	}
+	text = {
+		localization_key = rank_duchy_royal_march
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_royal_march
+		}
+	}
+	text = {
+		localization_key = rank_duchy_continental_league
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_continental_league
+		}
+	}
+	text = {
+		localization_key = rank_duchy_federal_league
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_federal_league
+		}
+	}
+	text = {
+		localization_key = rank_duchy_grand_republic
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_grand_republic
+		}
+	}
+	text = {
+		localization_key = rank_duchy_league_state
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_league_state
+		}
+	}
+	text = {
+		localization_key = rank_duchy_maritime_league
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_maritime_league
+		}
+	}
+	text = {
+		localization_key = rank_duchy_maritime_republic
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_maritime_republic
+		}
+	}
+	text = {
+		localization_key = rank_duchy_merchant_league
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_merchant_league
+		}
+	}
+	text = {
+		localization_key = rank_duchy_regional_league
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_regional_league
+		}
+	}
+	text = {
+		localization_key = rank_duchy_state_republic
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_state_republic
+		}
+	}
+	text = {
+		localization_key = rank_duchy_trade_league
+		trigger = {
+			country_rank_is_duchy = yes
+			has_variable = rank_duchy_trade_league
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_client_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_client_kingdom
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_composite_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_composite_kingdom
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_crown_realm
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_crown_realm
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_crowned_duchy
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_crowned_duchy
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_high_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_high_kingdom
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_imperial_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_imperial_kingdom
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_kingdom
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_petty_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_petty_kingdom
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_client_republic
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_client_republic
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_commonwealth
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_commonwealth
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_continental_republic
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_continental_republic
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_crowned_republic
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_crowned_republic
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_federal_republic
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_federal_republic
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_grand_federation
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_grand_federation
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_republican_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_republican_kingdom
+		}
+	}
+	text = {
+		localization_key = rank_empire_colonial_empire
+		trigger = {
+			country_rank_is_empire = yes
+			has_variable = rank_empire_colonial_empire
+		}
+	}
+	text = {
+		localization_key = rank_empire_composite_empire
+		trigger = {
+			country_rank_is_empire = yes
+			has_variable = rank_empire_composite_empire
+		}
+	}
+	text = {
+		localization_key = rank_empire_empire
+		trigger = {
+			country_rank_is_empire = yes
+			has_variable = rank_empire_empire
+		}
+	}
+	text = {
+		localization_key = rank_empire_federal_empire
+		trigger = {
+			country_rank_is_empire = yes
+			has_variable = rank_empire_federal_empire
+		}
+	}
+	text = {
+		localization_key = rank_empire_imperial_republic
+		trigger = {
+			country_rank_is_empire = yes
+			has_variable = rank_empire_imperial_republic
+		}
+	}
+	text = {
+		localization_key = rank_empire_maritime_empire
+		trigger = {
+			country_rank_is_empire = yes
+			has_variable = rank_empire_maritime_empire
+		}
+	}
+	# Authority Ledger forced defaults (no vanilla leakage)
+	text = {
+		localization_key = rank_county_county
+		trigger = {
+			country_rank_is_county = yes
+		}
+	}
+	text = {
+		localization_key = rank_duchy_duchy
+		trigger = {
+			country_rank_is_duchy = yes
+		}
+	}
+	text = {
+		localization_key = rank_kingdom_kingdom
+		trigger = {
+			country_rank_is_kingdom = yes
+		}
+	}
+	text = {
+		localization_key = rank_empire_empire
+		trigger = {
+			country_rank_is_empire = yes
+		}
+	}
+
+}

@@ -1,0 +1,1084 @@
+#visible = "[GetPlayer.HasVariable('ctf_var_judgedom')]"
+window = {
+	name = "bb_ctf_selector_window"
+	layer = top
+	parentanchor = center
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+    size = { 1000 800 }
+	
+	position = { 20% 0% }
+	
+	datacontext = "[GetSelectedCountryOrByLocation]"
+
+    using = bg_window_default
+	using = bg_cabinet_card_frame
+
+	vbox = {
+		margin_right = 5
+		margin_left = 5
+
+		window_header = {
+			blockoverride "header_text" {
+				text = "Authority Ledger"
+				align = center
+			}
+		}
+		
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			size = { 0 0 }
+	
+			blockoverride "scrollbox_content" {
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					#### START RRANKS (76) ####
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Big
+					default_format = "#yellow_titles"
+					text = "R-Ranks Only (76)"
+				}
+				expand = {}
+				vbox = {
+					visible = {
+						trigger = { country_rank_is_county = yes }
+					}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "County-tier — Monarchies"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_border_county"
+						onclick = "[GetScriptedGui('ctf_rank_border_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_border_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_border_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_capital_county"
+						onclick = "[GetScriptedGui('ctf_rank_capital_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_capital_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_capital_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_composite_county"
+						onclick = "[GetScriptedGui('ctf_rank_composite_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_composite_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_composite_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_county"
+						onclick = "[GetScriptedGui('ctf_rank_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_county_confederation"
+						onclick = "[GetScriptedGui('ctf_rank_county_confederation_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_county_confederation_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_county_confederation"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_crown_county"
+						onclick = "[GetScriptedGui('ctf_rank_crown_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_crown_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_crown_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_demesne"
+						onclick = "[GetScriptedGui('ctf_rank_demesne_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_demesne_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_demesne"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_ducal_county"
+						onclick = "[GetScriptedGui('ctf_rank_ducal_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_ducal_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_ducal_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_estate"
+						onclick = "[GetScriptedGui('ctf_rank_estate_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_estate_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_estate"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_holding"
+						onclick = "[GetScriptedGui('ctf_rank_holding_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_holding_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_holding"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_lordship"
+						onclick = "[GetScriptedGui('ctf_rank_lordship_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_lordship_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_lordship"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_manor"
+						onclick = "[GetScriptedGui('ctf_rank_manor_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_manor_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_manor"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_march_county"
+						onclick = "[GetScriptedGui('ctf_rank_march_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_march_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_march_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_palatine_county"
+						onclick = "[GetScriptedGui('ctf_rank_palatine_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_palatine_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_palatine_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_petty_lordship"
+						onclick = "[GetScriptedGui('ctf_rank_petty_lordship_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_petty_lordship_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_petty_lordship"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_royal_county"
+						onclick = "[GetScriptedGui('ctf_rank_royal_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_royal_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_royal_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_senior_county"
+						onclick = "[GetScriptedGui('ctf_rank_senior_county_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_senior_county_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_senior_county"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_viscounty"
+						onclick = "[GetScriptedGui('ctf_rank_viscounty_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_viscounty_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_viscounty"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				expand = {}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "County-tier — Republics"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_borough"
+						onclick = "[GetScriptedGui('ctf_rank_borough_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_borough_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_borough"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_charter_town"
+						onclick = "[GetScriptedGui('ctf_rank_charter_town_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_charter_town_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_charter_town"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_city_league"
+						onclick = "[GetScriptedGui('ctf_rank_city_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_city_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_city_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_civic_republic"
+						onclick = "[GetScriptedGui('ctf_rank_civic_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_civic_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_civic_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_commercial_city"
+						onclick = "[GetScriptedGui('ctf_rank_commercial_city_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_commercial_city_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_commercial_city"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_commune"
+						onclick = "[GetScriptedGui('ctf_rank_commune_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_commune_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_commune"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_federal_city"
+						onclick = "[GetScriptedGui('ctf_rank_federal_city_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_federal_city_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_federal_city"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_free_settlement"
+						onclick = "[GetScriptedGui('ctf_rank_free_settlement_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_free_settlement_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_free_settlement"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_free_town"
+						onclick = "[GetScriptedGui('ctf_rank_free_town_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_free_town_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_free_town"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_guild_republic"
+						onclick = "[GetScriptedGui('ctf_rank_guild_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_guild_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_guild_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_league_city"
+						onclick = "[GetScriptedGui('ctf_rank_league_city_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_league_city_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_league_city"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_maritime_city_league"
+						onclick = "[GetScriptedGui('ctf_rank_maritime_city_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_maritime_city_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_maritime_city_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_market_hamlet"
+						onclick = "[GetScriptedGui('ctf_rank_market_hamlet_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_market_hamlet_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_market_hamlet"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_metropolitan_republic"
+						onclick = "[GetScriptedGui('ctf_rank_metropolitan_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_metropolitan_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_metropolitan_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_port_confederation"
+						onclick = "[GetScriptedGui('ctf_rank_port_confederation_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_port_confederation_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_port_confederation"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_port_republic"
+						onclick = "[GetScriptedGui('ctf_rank_port_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_port_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_port_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_county_trade_city"
+						onclick = "[GetScriptedGui('ctf_rank_trade_city_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_trade_city_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_county_trade_city"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=county, gov=republic."
+						button_ignore = none
+					}
+				}
+				expand = {}
+				}
+				vbox = {
+					visible = {
+						trigger = { country_rank_is_duchy = yes }
+					}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "Duchy-tier — Monarchies"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_border_duchy"
+						onclick = "[GetScriptedGui('ctf_rank_border_duchy_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_border_duchy_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_border_duchy"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_composite_duchy"
+						onclick = "[GetScriptedGui('ctf_rank_composite_duchy_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_composite_duchy_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_composite_duchy"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_crown_duchy"
+						onclick = "[GetScriptedGui('ctf_rank_crown_duchy_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_crown_duchy_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_crown_duchy"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_ducal_state"
+						onclick = "[GetScriptedGui('ctf_rank_ducal_state_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_ducal_state_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_ducal_state"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_duchy"
+						onclick = "[GetScriptedGui('ctf_rank_duchy_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_duchy_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_duchy"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_grand_duchy"
+						onclick = "[GetScriptedGui('ctf_rank_grand_duchy_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_grand_duchy_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_grand_duchy"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_march"
+						onclick = "[GetScriptedGui('ctf_rank_march_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_march_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_march"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_march_principality"
+						onclick = "[GetScriptedGui('ctf_rank_march_principality_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_march_principality_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_march_principality"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_royal_duchy"
+						onclick = "[GetScriptedGui('ctf_rank_royal_duchy_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_royal_duchy_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_royal_duchy"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_royal_march"
+						onclick = "[GetScriptedGui('ctf_rank_royal_march_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_royal_march_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_royal_march"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				expand = {}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "Duchy-tier — Republics"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_continental_league"
+						onclick = "[GetScriptedGui('ctf_rank_continental_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_continental_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_continental_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_federal_league"
+						onclick = "[GetScriptedGui('ctf_rank_federal_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_federal_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_federal_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_grand_republic"
+						onclick = "[GetScriptedGui('ctf_rank_grand_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_grand_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_grand_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_league_state"
+						onclick = "[GetScriptedGui('ctf_rank_league_state_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_league_state_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_league_state"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_maritime_league"
+						onclick = "[GetScriptedGui('ctf_rank_maritime_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_maritime_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_maritime_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_maritime_republic"
+						onclick = "[GetScriptedGui('ctf_rank_maritime_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_maritime_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_maritime_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_merchant_league"
+						onclick = "[GetScriptedGui('ctf_rank_merchant_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_merchant_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_merchant_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_regional_league"
+						onclick = "[GetScriptedGui('ctf_rank_regional_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_regional_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_regional_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_state_republic"
+						onclick = "[GetScriptedGui('ctf_rank_state_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_state_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_state_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_duchy_trade_league"
+						onclick = "[GetScriptedGui('ctf_rank_trade_league_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_trade_league_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_duchy_trade_league"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=duchy, gov=republic."
+						button_ignore = none
+					}
+				}
+				expand = {}
+				}
+				vbox = {
+					visible = {
+						trigger = { country_rank_is_kingdom = yes }
+					}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "Kingdom-tier — Monarchies"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_client_kingdom"
+						onclick = "[GetScriptedGui('ctf_rank_client_kingdom_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_client_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_client_kingdom"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_composite_kingdom"
+						onclick = "[GetScriptedGui('ctf_rank_composite_kingdom_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_composite_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_composite_kingdom"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_crown_realm"
+						onclick = "[GetScriptedGui('ctf_rank_crown_realm_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_crown_realm_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_crown_realm"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_crowned_duchy"
+						onclick = "[GetScriptedGui('ctf_rank_crowned_duchy_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_crowned_duchy_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_crowned_duchy"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_high_kingdom"
+						onclick = "[GetScriptedGui('ctf_rank_high_kingdom_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_high_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_high_kingdom"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_imperial_kingdom"
+						onclick = "[GetScriptedGui('ctf_rank_imperial_kingdom_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_imperial_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_imperial_kingdom"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_kingdom"
+						onclick = "[GetScriptedGui('ctf_rank_kingdom_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_kingdom"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_petty_kingdom"
+						onclick = "[GetScriptedGui('ctf_rank_petty_kingdom_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_petty_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_petty_kingdom"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_realm"
+						onclick = "[GetScriptedGui('ctf_rank_realm_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_realm_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_realm"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				expand = {}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "Kingdom-tier — Republics"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_client_republic"
+						onclick = "[GetScriptedGui('ctf_rank_client_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_client_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_client_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_commonwealth"
+						onclick = "[GetScriptedGui('ctf_rank_commonwealth_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_commonwealth_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_commonwealth"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_continental_republic"
+						onclick = "[GetScriptedGui('ctf_rank_continental_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_continental_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_continental_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_crowned_republic"
+						onclick = "[GetScriptedGui('ctf_rank_crowned_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_crowned_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_crowned_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_federal_republic"
+						onclick = "[GetScriptedGui('ctf_rank_federal_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_federal_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_federal_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_grand_federation"
+						onclick = "[GetScriptedGui('ctf_rank_grand_federation_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_grand_federation_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_grand_federation"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=republic."
+						button_ignore = none
+					}
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_kingdom_republican_kingdom"
+						onclick = "[GetScriptedGui('ctf_rank_republican_kingdom_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_republican_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_kingdom_republican_kingdom"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=kingdom, gov=republic."
+						button_ignore = none
+					}
+				}
+				expand = {}
+				}
+				vbox = {
+					visible = {
+						trigger = { country_rank_is_empire = yes }
+					}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "Empire-tier — Monarchies"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_empire_colonial_empire"
+						onclick = "[GetScriptedGui('ctf_rank_colonial_empire_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_colonial_empire_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_empire_colonial_empire"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=empire, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_empire_composite_empire"
+						onclick = "[GetScriptedGui('ctf_rank_composite_empire_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_composite_empire_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_empire_composite_empire"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=empire, gov=monarchy."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_empire_empire"
+						onclick = "[GetScriptedGui('ctf_rank_empire_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_empire_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_empire_empire"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=empire, gov=monarchy."
+						button_ignore = none
+					}
+				}
+				expand = {}
+				text_single = {
+					autoresize = yes
+					using = Font_Size_Medium
+					default_format = "#bold"
+					text = "Empire-tier — Republics"
+				}
+				hbox = {
+					margin_top = 5
+					margin_bottom = 5
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_empire_federal_empire"
+						onclick = "[GetScriptedGui('ctf_rank_federal_empire_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_federal_empire_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_empire_federal_empire"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=empire, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_empire_imperial_republic"
+						onclick = "[GetScriptedGui('ctf_rank_imperial_republic_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_imperial_republic_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_empire_imperial_republic"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=empire, gov=republic."
+						button_ignore = none
+					}
+					button_regular = {
+						blockoverride "primary_visible" {}
+						size = { 285 60 }
+						name = "rank_empire_maritime_empire"
+						onclick = "[GetScriptedGui('ctf_rank_maritime_empire_vset_sgui').Execute(GuiScope.End)]"
+						onrightclick = "[GetScriptedGui('ctf_rank_maritime_empire_vrem_sgui').Execute(GuiScope.End)]"
+						text = "rank_empire_maritime_empire"
+						fontsize = 18
+						tooltip = "Left click: set. Right click: remove. Active when tier=empire, gov=republic."
+						button_ignore = none
+					}
+				}
+				}
+				}
+}
+		}
+	}
+}
