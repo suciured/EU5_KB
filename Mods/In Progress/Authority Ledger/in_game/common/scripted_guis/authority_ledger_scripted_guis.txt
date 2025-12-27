@@ -1,0 +1,1364 @@
+authority_ledger_r1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r1
+    }
+}
+
+authority_ledger_r2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r2
+    }
+}
+
+authority_ledger_r3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r3
+    }
+}
+
+authority_ledger_r4_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r4
+    }
+}
+
+authority_ledger_r5_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r5
+    }
+}
+
+authority_ledger_r6_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r6
+    }
+}
+
+authority_ledger_r7_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r7
+    }
+}
+
+authority_ledger_r8_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r8
+    }
+}
+
+authority_ledger_r9_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r9
+    }
+}
+
+authority_ledger_r10_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r10
+    }
+}
+
+authority_ledger_r11_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r11
+    }
+}
+
+authority_ledger_r12_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r12
+    }
+}
+
+authority_ledger_r13_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r13
+    }
+}
+
+authority_ledger_r14_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r14
+    }
+}
+
+authority_ledger_r15_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r15
+    }
+}
+
+authority_ledger_r1_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r1_monarchy_1
+    }
+}
+
+authority_ledger_r1_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r1_monarchy_2
+    }
+}
+
+authority_ledger_r1_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r1_monarchy_3
+    }
+}
+
+authority_ledger_r1_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r1_republic_1
+    }
+}
+
+authority_ledger_r1_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r1_republic_2
+    }
+}
+
+authority_ledger_r1_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r1_republic_3
+    }
+}
+
+authority_ledger_r2_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r2_monarchy_1
+    }
+}
+
+authority_ledger_r2_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r2_monarchy_2
+    }
+}
+
+authority_ledger_r2_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r2_monarchy_3
+    }
+}
+
+authority_ledger_r2_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r2_republic_1
+    }
+}
+
+authority_ledger_r2_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r2_republic_2
+    }
+}
+
+authority_ledger_r2_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r2_republic_3
+    }
+}
+
+authority_ledger_r3_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r3_monarchy_1
+    }
+}
+
+authority_ledger_r3_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r3_monarchy_2
+    }
+}
+
+authority_ledger_r3_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r3_monarchy_3
+    }
+}
+
+authority_ledger_r3_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r3_republic_1
+    }
+}
+
+authority_ledger_r3_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r3_republic_2
+    }
+}
+
+authority_ledger_r3_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r3_republic_3
+    }
+}
+
+authority_ledger_r4_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r4_monarchy_1
+    }
+}
+
+authority_ledger_r4_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r4_monarchy_2
+    }
+}
+
+authority_ledger_r4_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r4_monarchy_3
+    }
+}
+
+authority_ledger_r4_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r4_republic_1
+    }
+}
+
+authority_ledger_r4_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r4_republic_2
+    }
+}
+
+authority_ledger_r4_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r4_republic_3
+    }
+}
+
+authority_ledger_r5_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r5_monarchy_1
+    }
+}
+
+authority_ledger_r5_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r5_monarchy_2
+    }
+}
+
+authority_ledger_r5_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r5_monarchy_3
+    }
+}
+
+authority_ledger_r5_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r5_republic_1
+    }
+}
+
+authority_ledger_r5_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r5_republic_2
+    }
+}
+
+authority_ledger_r5_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r5_republic_3
+    }
+}
+
+authority_ledger_r6_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r6_monarchy_1
+    }
+}
+
+authority_ledger_r6_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r6_monarchy_2
+    }
+}
+
+authority_ledger_r6_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r6_monarchy_3
+    }
+}
+
+authority_ledger_r6_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r6_republic_1
+    }
+}
+
+authority_ledger_r6_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r6_republic_2
+    }
+}
+
+authority_ledger_r6_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r6_republic_3
+    }
+}
+
+authority_ledger_r7_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r7_monarchy_1
+    }
+}
+
+authority_ledger_r7_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r7_monarchy_2
+    }
+}
+
+authority_ledger_r7_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r7_monarchy_3
+    }
+}
+
+authority_ledger_r7_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r7_republic_1
+    }
+}
+
+authority_ledger_r7_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r7_republic_2
+    }
+}
+
+authority_ledger_r7_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r7_republic_3
+    }
+}
+
+authority_ledger_r8_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r8_monarchy_1
+    }
+}
+
+authority_ledger_r8_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r8_monarchy_2
+    }
+}
+
+authority_ledger_r8_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r8_monarchy_3
+    }
+}
+
+authority_ledger_r8_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r8_republic_1
+    }
+}
+
+authority_ledger_r8_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r8_republic_2
+    }
+}
+
+authority_ledger_r8_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r8_republic_3
+    }
+}
+
+authority_ledger_r9_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r9_monarchy_1
+    }
+}
+
+authority_ledger_r9_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r9_monarchy_2
+    }
+}
+
+authority_ledger_r9_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r9_monarchy_3
+    }
+}
+
+authority_ledger_r9_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r9_republic_1
+    }
+}
+
+authority_ledger_r9_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r9_republic_2
+    }
+}
+
+authority_ledger_r9_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r9_republic_3
+    }
+}
+
+authority_ledger_r10_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r10_monarchy_1
+    }
+}
+
+authority_ledger_r10_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r10_monarchy_2
+    }
+}
+
+authority_ledger_r10_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r10_monarchy_3
+    }
+}
+
+authority_ledger_r10_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r10_republic_1
+    }
+}
+
+authority_ledger_r10_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r10_republic_2
+    }
+}
+
+authority_ledger_r10_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r10_republic_3
+    }
+}
+
+authority_ledger_r11_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r11_monarchy_1
+    }
+}
+
+authority_ledger_r11_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r11_monarchy_2
+    }
+}
+
+authority_ledger_r11_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r11_monarchy_3
+    }
+}
+
+authority_ledger_r11_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r11_republic_1
+    }
+}
+
+authority_ledger_r11_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r11_republic_2
+    }
+}
+
+authority_ledger_r11_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r11_republic_3
+    }
+}
+
+authority_ledger_r12_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r12_monarchy_1
+    }
+}
+
+authority_ledger_r12_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r12_monarchy_2
+    }
+}
+
+authority_ledger_r12_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r12_monarchy_3
+    }
+}
+
+authority_ledger_r12_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r12_republic_1
+    }
+}
+
+authority_ledger_r12_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r12_republic_2
+    }
+}
+
+authority_ledger_r12_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r12_republic_3
+    }
+}
+
+authority_ledger_r13_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r13_monarchy_1
+    }
+}
+
+authority_ledger_r13_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r13_monarchy_2
+    }
+}
+
+authority_ledger_r13_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r13_monarchy_3
+    }
+}
+
+authority_ledger_r13_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r13_republic_1
+    }
+}
+
+authority_ledger_r13_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r13_republic_2
+    }
+}
+
+authority_ledger_r13_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r13_republic_3
+    }
+}
+
+authority_ledger_r14_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r14_monarchy_1
+    }
+}
+
+authority_ledger_r14_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r14_monarchy_2
+    }
+}
+
+authority_ledger_r14_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r14_monarchy_3
+    }
+}
+
+authority_ledger_r14_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r14_republic_1
+    }
+}
+
+authority_ledger_r14_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r14_republic_2
+    }
+}
+
+authority_ledger_r14_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r14_republic_3
+    }
+}
+
+authority_ledger_r15_subtype_monarchy_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r15_monarchy_1
+    }
+}
+
+authority_ledger_r15_subtype_monarchy_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r15_monarchy_2
+    }
+}
+
+authority_ledger_r15_subtype_monarchy_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r15_monarchy_3
+    }
+}
+
+authority_ledger_r15_subtype_republic_1_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r15_republic_1
+    }
+}
+
+authority_ledger_r15_subtype_republic_2_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r15_republic_2
+    }
+}
+
+authority_ledger_r15_subtype_republic_3_set_sgui = {
+    scope = country
+
+    is_shown = { always = yes }
+    is_valid = { always = yes }
+
+    effect = {
+        authority_ledger_clear_rank_variables = yes
+        authority_ledger_clear_subtype_variables = yes
+        set_variable = authority_ledger_r15_republic_3
+    }
+}

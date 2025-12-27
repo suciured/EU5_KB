@@ -1,0 +1,638 @@
+REPLACE:country_name_construction = {
+    type = country
+
+    text = {
+        localization_key = AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r1_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r1_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r1_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r1_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r1_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r1_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r2_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r2_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r2_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r2_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r2_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r2_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r3_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r3_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r3_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r3_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r3_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r3_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r4_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r4_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r4_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r4_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r4_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r4_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r5_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r5_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r5_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r5_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r5_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r5_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r6_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r6_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r6_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r6_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r6_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r6_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r7_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r7_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r7_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r7_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r7_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r7_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r8_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r8_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r8_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r8_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r8_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r8_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r9_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r9_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r9_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r9_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r9_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r9_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r10_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r10_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r10_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r10_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r10_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r10_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r11_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r11_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r11_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r11_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r11_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r11_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r12_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r12_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r12_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r12_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r12_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r12_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r13_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r13_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r13_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r13_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r13_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r13_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r14_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r14_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r14_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r14_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r14_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r14_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r15_monarchy_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r15_monarchy_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r15_monarchy_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_1_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r15_republic_1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_2_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r15_republic_2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_3_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r15_republic_3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R1_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r1
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R2_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r2
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R3_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r3
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R4_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r4
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R5_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r5
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R6_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r6
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R7_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r7
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R8_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r8
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R9_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r9
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R10_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r10
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R11_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r11
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R12_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r12
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R13_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r13
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R14_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r14
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_R15_NAME_COUNTRY
+        trigger = {
+            has_variable = authority_ledger_r15
+        }
+    }
+    text = {
+        localization_key = AUTHORITY_LEDGER_RANK_FALLBACK_COUNTRY
+        fallback = yes
+    }
+}

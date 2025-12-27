@@ -1,6 +1,8 @@
 lateralview = {
 	name = "authority_ledger"
 
+	datacontext = "[GetPlayer]"
+
 	blockoverride "panel_header" {
 		window_header_alt = {
 			blockoverride "header_text" {
@@ -25,12 +27,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R1_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r1_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -40,6 +44,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r1_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -49,6 +54,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r1_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -58,6 +64,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r1_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -67,6 +74,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r1_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -76,6 +84,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r1_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -89,12 +98,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R2_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r2_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -104,6 +115,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r2_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -113,6 +125,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r2_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -122,6 +135,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r2_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -131,6 +145,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r2_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -140,6 +155,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r2_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -153,12 +169,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R3_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r3_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -168,6 +186,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r3_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -177,6 +196,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r3_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -186,6 +206,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r3_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -195,6 +216,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r3_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -204,6 +226,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r3_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -217,12 +240,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R4_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r4_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r4_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -232,6 +257,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r4_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -241,6 +267,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r4_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -250,6 +277,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r4_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -259,6 +287,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r4_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -268,6 +297,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r4_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -281,12 +311,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R5_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r5_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r5_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -296,6 +328,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r5_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -305,6 +338,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r5_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -314,6 +348,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r5_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -323,6 +358,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r5_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -332,6 +368,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r5_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -345,12 +382,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R6_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r6_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r6_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -360,6 +399,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r6_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -369,6 +409,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r6_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -378,6 +419,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r6_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -387,6 +429,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r6_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -396,6 +439,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r6_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -409,12 +453,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R7_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r7_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r7_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -424,6 +470,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r7_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -433,6 +480,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r7_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -442,6 +490,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r7_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -451,6 +500,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r7_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -460,6 +510,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r7_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -473,12 +524,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R8_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r8_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r8_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -488,6 +541,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r8_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -497,6 +551,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r8_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -506,6 +561,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r8_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -515,6 +571,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r8_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -524,6 +581,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r8_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -537,12 +595,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R9_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r9_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r9_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -552,6 +612,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r9_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -561,6 +622,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r9_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -570,6 +632,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r9_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -579,6 +642,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r9_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -588,6 +652,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r9_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -601,12 +666,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R10_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r10_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r10_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -616,6 +683,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r10_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -625,6 +693,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r10_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -634,6 +703,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r10_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -643,6 +713,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r10_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -652,6 +723,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r10_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -665,12 +737,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R11_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r11_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r11_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -680,6 +754,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r11_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -689,6 +764,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r11_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -698,6 +774,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r11_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -707,6 +784,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r11_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -716,6 +794,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r11_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -729,12 +808,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R12_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r12_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r12_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -744,6 +825,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r12_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -753,6 +835,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r12_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -762,6 +845,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r12_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -771,6 +855,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r12_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -780,6 +865,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r12_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -793,12 +879,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R13_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r13_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r13_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -808,6 +896,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r13_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -817,6 +906,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r13_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -826,6 +916,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r13_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -835,6 +926,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r13_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -844,6 +936,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r13_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -857,12 +950,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R14_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r14_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r14_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -872,6 +967,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r14_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -881,6 +977,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r14_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -890,6 +987,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r14_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -899,6 +997,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r14_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -908,6 +1007,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r14_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -921,12 +1021,14 @@ lateralview = {
 					button_regular = {
 						size = { 180 24 }
 						text = "AUTHORITY_LEDGER_R15_NAME"
+						onclick = "[GetScriptedGui('authority_ledger_r15_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_yellow;bold"
 					}
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_1"
+						onclick = "[GetScriptedGui('authority_ledger_r15_subtype_monarchy_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -936,6 +1038,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_2"
+						onclick = "[GetScriptedGui('authority_ledger_r15_subtype_monarchy_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -945,6 +1048,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_3"
+						onclick = "[GetScriptedGui('authority_ledger_r15_subtype_monarchy_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -954,6 +1058,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_1"
+						onclick = "[GetScriptedGui('authority_ledger_r15_subtype_republic_1_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -963,6 +1068,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_2"
+						onclick = "[GetScriptedGui('authority_ledger_r15_subtype_republic_2_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
@@ -972,6 +1078,7 @@ lateralview = {
 					button_regular = {
 						size = { 120 24 }
 						text = "AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_3"
+						onclick = "[GetScriptedGui('authority_ledger_r15_subtype_republic_3_set_sgui').Execute(GuiScope.End)]"
 						fontsize = 11
 						default_format = "#color_white"
 						blockoverride "button_regular_texture" {
