@@ -37,8 +37,8 @@ template ledger_tabs_template {
 			using = LimitLedgersTooltip
 		}
 
-		onclick = "[OpenLateralView('authority_ledger_list_view')]"
-		down = "[IsLateralViewOpened('authority_ledger_list_view')]"
+		onclick = "[OpenLateralView('authority_ledger_list')]"
+		down = "[IsLateralViewOpened('authority_ledger_list')]"
 	}
 	
 	button_main_tab_alt = {
