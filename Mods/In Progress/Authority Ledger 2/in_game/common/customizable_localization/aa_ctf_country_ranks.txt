@@ -1,5 +1,12 @@
 REPLACE:country_flavor = {
+
+	# the REPLACE command is used to replace the original country flavor file
+
 	type = country
+
+	########################################
+	# County R-Ranks
+	########################################
 	text = {
 		localization_key = rank_county_border_county
 		trigger = {
@@ -245,6 +252,10 @@ REPLACE:country_flavor = {
 			has_variable = rank_county_trade_city
 		}
 	}
+
+	########################################
+	# Duchy R-Ranks
+	########################################
 	text = {
 		localization_key = rank_duchy_border_duchy
 		trigger = {
@@ -385,6 +396,17 @@ REPLACE:country_flavor = {
 			has_variable = rank_duchy_trade_league
 		}
 	}
+
+	########################################
+	# Kingdom R-Ranks
+	########################################
+	text = {
+		localization_key = rank_kingdom_realm
+		trigger = {
+			country_rank_is_kingdom = yes
+			has_variable = rank_kingdom_realm
+		}
+	}
 	text = {
 		localization_key = rank_kingdom_client_kingdom
 		trigger = {
@@ -490,6 +512,10 @@ REPLACE:country_flavor = {
 			has_variable = rank_kingdom_republican_kingdom
 		}
 	}
+
+	########################################
+	# Empire R-Ranks
+	########################################
 	text = {
 		localization_key = rank_empire_colonial_empire
 		trigger = {
@@ -532,7 +558,10 @@ REPLACE:country_flavor = {
 			has_variable = rank_empire_maritime_empire
 		}
 	}
-	# Authority Ledger forced defaults (no vanilla leakage)
+
+	########################################
+	# Forced defaults (no vanilla leakage)
+	########################################
 	text = {
 		localization_key = rank_county_county
 		trigger = {
@@ -557,5 +586,4 @@ REPLACE:country_flavor = {
 			country_rank_is_empire = yes
 		}
 	}
-
 }
