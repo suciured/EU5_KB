@@ -93,9 +93,11 @@ Button labels must display LOCALIZED names, not raw keys.
 
 --------------------------------------------------------------------
 
-You must only create mod files based on the reference mods OR the template mod. Also do not make up any information and only use what is given to you via KB TXT files. this includes everything in the base file such as plugins and core 
+You must only create mod files based on the reference mods OR the template mod. Also do not make up any information and only use what is given to you via txt files or folders. this includes everything in the base file such as plugins and core 
 You can also use the Raw files as another layer of reference 
 
 END OF DESIGN INTENT
+
+Do not touch authority ledger 2 since that is my backup. you can still look at the two r rank files to see how it works. I want a chart based on the title flavor mod that has 15 rows, one for each R rank and then the subranks beside the R ranks. the R rank buttons should just change the R of the played country to it and the subtype buttons will force the country into that type. For now just change the name of the country.
 
 
