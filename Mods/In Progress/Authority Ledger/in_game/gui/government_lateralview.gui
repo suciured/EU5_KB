@@ -2082,13 +2082,11 @@ lateralview = {
 								blockoverride "button_regular_texture" {
 									modify_texture = { using = color_red_texture }
 								}
-								action_tooltip = {
-									click_type = left
-									click_mode = single
-									enabled = yes
-									on_action = "[OpenLateralView('authority_ledger_lateralview')]"
-								}
-								tooltipwidget = { BasicFunctionalTooltip = {} }
+								size = { 110 22 }
+								text = "AUTHORITY_LEDGER_BUTTON"
+								fontsize = 11
+								tooltip_enabled = no
+								onclick = "[OpenLateralView('authority_ledger_lateralview')]"
 							}
 
 							expand = {}
