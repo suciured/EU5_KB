@@ -105,7 +105,7 @@ lateralview_full = {
 												size = { 120 -1 }
 												autoresize = no
 												align = right|nobaseline
-												raw_text = "[Concatenate('R', ToString_int32(Min_int32(CountriesListViewItem.GetCountry.GetOwnedLocationCount, '(int32)15')))]"
+												raw_text = "[Concatenate('R', ToString_int32(Min_int32(Add_int32('(int32)1', Divide_int32(PdxGuiWidget.GetIndexInDataModel, Divide_int32(Add_int32(GetDataModelSize(CountriesListView.GetCountriesListView), '(int32)14'), '(int32)15')))), '(int32)15')))]"
 												default_format = "#color_yellow;bold"
 											}
 										}
