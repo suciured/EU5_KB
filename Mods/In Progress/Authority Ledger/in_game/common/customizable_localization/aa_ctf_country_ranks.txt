@@ -534,25 +534,25 @@ REPLACE:country_flavor = {
 	}
 	# Authority Ledger forced defaults (no vanilla leakage)
 	text = {
-		localization_key = rank_county_holding
+		localization_key = rank_county_county
 		trigger = {
 			country_rank_is_county = yes
 		}
 	}
 	text = {
-		localization_key = rank_duchy_march
+		localization_key = rank_duchy_duchy
 		trigger = {
 			country_rank_is_duchy = yes
 		}
 	}
 	text = {
-		localization_key = rank_kingdom_realm
+		localization_key = rank_kingdom_kingdom
 		trigger = {
 			country_rank_is_kingdom = yes
 		}
 	}
 	text = {
-		localization_key = rank_empire_composite_empire
+		localization_key = rank_empire_empire
 		trigger = {
 			country_rank_is_empire = yes
 		}
