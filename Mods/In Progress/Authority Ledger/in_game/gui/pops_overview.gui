@@ -1,0 +1,148 @@
+template ledger_tabs_template {
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "POPULATION_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('pops_overview')]"
+		down = "[IsLateralViewOpened('pops_overview')]"
+	}
+
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "COUNTRIES_TAB"
+		}
+
+		enabled = "[Not(HasGameRuleFlag('limit_ledger'))]"
+		tooltip_enabled = "[HasGameRuleFlag('limit_ledger')]"
+		tooltipwidget = {
+			using = LimitLedgersTooltip
+		}
+
+		onclick = "[OpenLateralView('country_list')]"
+		down = "[IsLateralViewOpened('country_list')]"
+	}
+
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "AUTHORITY_LEDGER_TAB"
+		}
+
+		enabled = "[Not(HasGameRuleFlag('limit_ledger'))]"
+		tooltip_enabled = "[HasGameRuleFlag('limit_ledger')]"
+		tooltipwidget = {
+			using = LimitLedgersTooltip
+		}
+
+		onclick = "[OpenLateralView('authority_ledger_list_view')]"
+		down = "[IsLateralViewOpened('authority_ledger_list_view')]"
+	}
+	
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "SCORE_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('score_view')]"
+		down = "[IsLateralViewOpened('score_view')]"
+	}
+
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "WARS_L_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('wars_ledger')]"
+		down = "[IsLateralViewOpened('wars_ledger')]"
+	}
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "DYNASTIES_L_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('dynasties_ledger')]"
+		down = "[IsLateralViewOpened('dynasties_ledger')]"
+	}
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "CULTURES_L_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('cultures_ledger')]"
+		down = "[IsLateralViewOpened('cultures_ledger')]"
+	}
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "RELIGIONS_L_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('religions_ledger')]"
+		down = "[IsLateralViewOpened('religions_ledger')]"
+	}
+
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "LOCATIONS_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('locations_list')]"
+		down = "[IsLateralViewOpened('locations_list')]"
+	}
+	
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "MARKETS_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('markets_overview')]"
+		down = "[IsLateralViewOpened('markets_overview')]"
+	}
+
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "GOODS_TAB"
+		}
+
+		enabled = "[Not(HasGameRuleFlag('limit_ledger'))]"
+		tooltip_enabled = "[HasGameRuleFlag('limit_ledger')]"
+		tooltipwidget = {
+			using = LimitLedgersTooltip
+		}
+
+		onclick = "[OpenLateralView('goods_overview')]"
+		down = "[IsLateralViewOpened('goods_overview')]"
+	}
+
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "ART_TAB"
+		}
+		tooltip_enabled = no
+		onclick = "[OpenLateralView('arts_overview')]"
+		down = "[IsLateralViewOpened('arts_overview')]"
+	}
+
+	button_main_tab_alt = {
+		using = layoutpolicy_expanding
+		blockoverride "tab_text"{
+			text = "MODIFIERS_TEXT"
+		}
+		tooltipwidget = {
+			using = TabModifiersTooltip
+		}
+		onclick = "[OpenLateralView('player_modifiers')]"
+		down = "[IsLateralViewOpened('player_modifiers')]"
+	}
+}
