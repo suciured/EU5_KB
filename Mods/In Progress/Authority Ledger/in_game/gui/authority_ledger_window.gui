@@ -1,0 +1,985 @@
+lateralview = {
+	name = "authority_ledger"
+
+	blockoverride "panel_header" {
+		window_header_alt = {
+			blockoverride "header_text" {
+				text = "AUTHORITY_LEDGER_TITLE"
+			}
+		}
+	}
+
+	blockoverride "panel_content" {
+		vbox = {
+			using = layoutpolicy_expanding
+			using = bg_main_inner_alt
+			using = window_main_tabs_margin_alt
+			margin = { 10 10 }
+			spacing = 6
+
+			vbox = {
+				spacing = 4
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R1_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R1_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R1_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R2_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R2_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R2_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R3_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R3_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R3_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R4_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R4_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R4_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R5_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R5_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R5_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R6_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R6_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R6_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R7_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R7_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R7_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R8_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R8_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R8_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R9_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R9_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R9_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R10_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R10_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R10_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R11_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R11_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R11_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R12_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R12_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R12_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R13_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R13_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R13_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R14_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R14_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R14_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+
+				hbox = {
+					spacing = 4
+					button_regular = {
+						size = { 180 24 }
+						text = "AUTHORITY_LEDGER_R15_NAME"
+						fontsize = 11
+						default_format = "#color_yellow;bold"
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R15_SUBTYPE_MONARCHY_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_1"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_2"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+					button_regular = {
+						size = { 120 24 }
+						text = "AUTHORITY_LEDGER_R15_SUBTYPE_REPUBLIC_3"
+						fontsize = 11
+						default_format = "#color_white"
+						blockoverride "button_regular_texture" {
+							modify_texture = { using = color_dark_blue_texture }
+						}
+					}
+				}
+			}
+		}
+	}
+}
