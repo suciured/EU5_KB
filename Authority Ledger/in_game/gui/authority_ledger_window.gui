@@ -1,0 +1,1526 @@
+window = {
+	name = "authority_ledger_window"
+	layer = top
+	parentanchor = center
+	filter_mouse = all
+	allow_outside = yes
+	alwaystransparent = no
+	size = { 1100 820 }
+
+	datacontext = "[GetPlayer]"
+
+	using = bg_window_default
+	using = bg_cabinet_card_frame
+
+	vbox = {
+		margin_right = 5
+		margin_left = 5
+
+		window_header = {
+			blockoverride "header_text" {
+				text = "Authority Ledger"
+				align = center
+			}
+		}
+
+		scrollbox = {
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = expanding
+			size = { 0 0 }
+
+			blockoverride "scrollbox_content" {
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+
+					text_single = {
+						autoresize = yes
+						using = Font_Size_Big
+						default_format = "#yellow_titles"
+						text = "R-Ranks"
+					}
+
+					### COUNTY TIERS (R0-R6) ###
+					vbox = {
+						visible = {
+							trigger = { country_rank_is_county = yes }
+						}
+
+						text_single = {
+							autoresize = yes
+							using = Font_Size_Medium
+							default_format = "#bold"
+							text = "County-tier"
+						}
+
+						### R0 Basic Realm ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_county_basic_realm"
+								onclick = "[GetScriptedGui('al_rank_county_basic_realm_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_county_basic_realm_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_county_basic_realm"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_holding"
+										onclick = "[GetScriptedGui('al_rank_county_holding_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_holding_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_holding"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_estate"
+										onclick = "[GetScriptedGui('al_rank_county_estate_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_estate_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_estate"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_demesne"
+										onclick = "[GetScriptedGui('al_rank_county_demesne_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_demesne_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_demesne"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_commune"
+										onclick = "[GetScriptedGui('al_rank_county_commune_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_commune_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_commune"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_free_settlement"
+										onclick = "[GetScriptedGui('al_rank_county_free_settlement_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_free_settlement_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_free_settlement"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_market_hamlet"
+										onclick = "[GetScriptedGui('al_rank_county_market_hamlet_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_market_hamlet_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_market_hamlet"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R1 Local Authority ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_county_local_authority"
+								onclick = "[GetScriptedGui('al_rank_county_local_authority_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_county_local_authority_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_county_local_authority"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_lordship"
+										onclick = "[GetScriptedGui('al_rank_county_lordship_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_lordship_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_lordship"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_manor"
+										onclick = "[GetScriptedGui('al_rank_county_manor_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_manor_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_manor"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_petty_lordship"
+										onclick = "[GetScriptedGui('al_rank_county_petty_lordship_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_petty_lordship_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_petty_lordship"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_borough"
+										onclick = "[GetScriptedGui('al_rank_county_borough_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_borough_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_borough"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_charter_town"
+										onclick = "[GetScriptedGui('al_rank_county_charter_town_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_charter_town_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_charter_town"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_free_town"
+										onclick = "[GetScriptedGui('al_rank_county_free_town_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_free_town_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_free_town"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R2 Minor Polity ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_county_minor_polity"
+								onclick = "[GetScriptedGui('al_rank_county_minor_polity_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_county_minor_polity_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_county_minor_polity"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_county"
+										onclick = "[GetScriptedGui('al_rank_county_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_viscounty"
+										onclick = "[GetScriptedGui('al_rank_county_viscounty_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_viscounty_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_viscounty"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_border_county"
+										onclick = "[GetScriptedGui('al_rank_county_border_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_border_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_border_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_city_state"
+										onclick = "[GetScriptedGui('al_rank_county_city_state_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_city_state_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_city_state"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_civic_republic"
+										onclick = "[GetScriptedGui('al_rank_county_civic_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_civic_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_civic_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_port_republic"
+										onclick = "[GetScriptedGui('al_rank_county_port_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_port_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_port_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R3 Developed County ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_county_developed_county"
+								onclick = "[GetScriptedGui('al_rank_county_developed_county_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_county_developed_county_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_county_developed_county"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_palatine_county"
+										onclick = "[GetScriptedGui('al_rank_county_palatine_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_palatine_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_palatine_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_crown_county"
+										onclick = "[GetScriptedGui('al_rank_county_crown_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_crown_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_crown_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_capital_county"
+										onclick = "[GetScriptedGui('al_rank_county_capital_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_capital_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_capital_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_trade_city"
+										onclick = "[GetScriptedGui('al_rank_county_trade_city_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_trade_city_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_trade_city"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_port_republic"
+										onclick = "[GetScriptedGui('al_rank_county_port_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_port_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_port_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_guild_republic"
+										onclick = "[GetScriptedGui('al_rank_county_guild_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_guild_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_guild_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R4 Administrative County ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_county_administrative_county"
+								onclick = "[GetScriptedGui('al_rank_county_administrative_county_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_county_administrative_county_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_county_administrative_county"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_senior_county"
+										onclick = "[GetScriptedGui('al_rank_county_senior_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_senior_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_senior_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_march_county"
+										onclick = "[GetScriptedGui('al_rank_county_march_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_march_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_march_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_ducal_county"
+										onclick = "[GetScriptedGui('al_rank_county_ducal_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_ducal_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_ducal_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_league_city"
+										onclick = "[GetScriptedGui('al_rank_county_league_city_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_league_city_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_league_city"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_regional_city_state"
+										onclick = "[GetScriptedGui('al_rank_county_regional_city_state_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_regional_city_state_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_regional_city_state"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_federal_city"
+										onclick = "[GetScriptedGui('al_rank_county_federal_city_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_federal_city_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_federal_city"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R5 Senior County ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_county_senior_county"
+								onclick = "[GetScriptedGui('al_rank_county_senior_county_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_county_senior_county_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_county_senior_county"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_capital_county"
+										onclick = "[GetScriptedGui('al_rank_county_capital_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_capital_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_capital_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_march_county"
+										onclick = "[GetScriptedGui('al_rank_county_march_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_march_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_march_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_royal_county"
+										onclick = "[GetScriptedGui('al_rank_county_royal_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_royal_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_royal_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_metropolitan_republic"
+										onclick = "[GetScriptedGui('al_rank_county_metropolitan_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_metropolitan_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_metropolitan_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_commercial_city"
+										onclick = "[GetScriptedGui('al_rank_county_commercial_city_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_commercial_city_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_commercial_city"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_port_confederation"
+										onclick = "[GetScriptedGui('al_rank_county_port_confederation_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_port_confederation_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_port_confederation"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R6 County-Confederate ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_county_county_confederate"
+								onclick = "[GetScriptedGui('al_rank_county_county_confederate_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_county_county_confederate_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_county_county_confederate"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_county_confederation"
+										onclick = "[GetScriptedGui('al_rank_county_county_confederation_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_county_confederation_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_county_confederation"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_ducal_county"
+										onclick = "[GetScriptedGui('al_rank_county_ducal_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_ducal_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_ducal_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_composite_county"
+										onclick = "[GetScriptedGui('al_rank_county_composite_county_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_composite_county_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_composite_county"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_city_league"
+										onclick = "[GetScriptedGui('al_rank_county_city_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_city_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_city_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_federal_city"
+										onclick = "[GetScriptedGui('al_rank_county_federal_city_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_federal_city_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_federal_city"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_county_maritime_city_league"
+										onclick = "[GetScriptedGui('al_rank_county_maritime_city_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_county_maritime_city_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_county_maritime_city_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+					}
+
+					### DUCHY TIERS (R7-R10) ###
+					vbox = {
+						visible = {
+							trigger = { country_rank_is_duchy = yes }
+						}
+
+						text_single = {
+							autoresize = yes
+							using = Font_Size_Medium
+							default_format = "#bold"
+							text = "Duchy-tier"
+						}
+
+						### R7 Proto-Duchy ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_duchy_proto_duchy"
+								onclick = "[GetScriptedGui('al_rank_duchy_proto_duchy_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_duchy_proto_duchy_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_duchy_proto_duchy"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_proto_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_proto_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_proto_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_proto_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_march"
+										onclick = "[GetScriptedGui('al_rank_duchy_march_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_march_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_march"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_border_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_border_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_border_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_border_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_league_state"
+										onclick = "[GetScriptedGui('al_rank_duchy_league_state_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_league_state_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_league_state"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_regional_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_regional_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_regional_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_regional_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_trade_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_trade_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_trade_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_trade_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R8 Duchy ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_duchy_duchy"
+								onclick = "[GetScriptedGui('al_rank_duchy_duchy_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_duchy_duchy_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_duchy_duchy"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_border_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_border_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_border_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_border_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_royal_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_royal_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_royal_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_royal_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_grand_republic"
+										onclick = "[GetScriptedGui('al_rank_duchy_grand_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_grand_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_grand_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_trade_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_trade_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_trade_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_trade_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_maritime_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_maritime_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_maritime_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_maritime_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R9 High Duchy ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_duchy_high_duchy"
+								onclick = "[GetScriptedGui('al_rank_duchy_high_duchy_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_duchy_high_duchy_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_duchy_high_duchy"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_grand_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_grand_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_grand_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_grand_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_crown_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_crown_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_crown_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_crown_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_march_principality"
+										onclick = "[GetScriptedGui('al_rank_duchy_march_principality_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_march_principality_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_march_principality"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_federal_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_federal_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_federal_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_federal_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_merchant_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_merchant_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_merchant_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_merchant_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_maritime_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_maritime_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_maritime_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_maritime_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R10 Ducal State ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_duchy_ducal_state"
+								onclick = "[GetScriptedGui('al_rank_duchy_ducal_state_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_duchy_ducal_state_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_duchy_ducal_state"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_composite_duchy"
+										onclick = "[GetScriptedGui('al_rank_duchy_composite_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_composite_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_composite_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_ducal_state"
+										onclick = "[GetScriptedGui('al_rank_duchy_ducal_state_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_ducal_state_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_ducal_state"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_royal_march"
+										onclick = "[GetScriptedGui('al_rank_duchy_royal_march_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_royal_march_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_royal_march"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_state_republic"
+										onclick = "[GetScriptedGui('al_rank_duchy_state_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_state_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_state_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_continental_league"
+										onclick = "[GetScriptedGui('al_rank_duchy_continental_league_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_continental_league_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_continental_league"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_duchy_maritime_republic"
+										onclick = "[GetScriptedGui('al_rank_duchy_maritime_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_duchy_maritime_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_duchy_maritime_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+					}
+
+					### KINGDOM TIERS (R11-R13) ###
+					vbox = {
+						visible = {
+							trigger = { country_rank_is_kingdom = yes }
+						}
+
+						text_single = {
+							autoresize = yes
+							using = Font_Size_Medium
+							default_format = "#bold"
+							text = "Kingdom-tier"
+						}
+
+						### R11 Proto-Kingdom ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_kingdom_proto_kingdom"
+								onclick = "[GetScriptedGui('al_rank_kingdom_proto_kingdom_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_kingdom_proto_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_kingdom_proto_kingdom"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_petty_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_petty_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_petty_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_petty_kingdom"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_crowned_duchy"
+										onclick = "[GetScriptedGui('al_rank_kingdom_crowned_duchy_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_crowned_duchy_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_crowned_duchy"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_client_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_client_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_client_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_client_kingdom"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_crowned_republic"
+										onclick = "[GetScriptedGui('al_rank_kingdom_crowned_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_crowned_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_crowned_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_republican_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_republican_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_republican_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_republican_kingdom"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_client_republic"
+										onclick = "[GetScriptedGui('al_rank_kingdom_client_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_client_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_client_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R12 Kingdom ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_kingdom_kingdom"
+								onclick = "[GetScriptedGui('al_rank_kingdom_kingdom_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_kingdom_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_kingdom_kingdom"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_kingdom"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_crown_realm"
+										onclick = "[GetScriptedGui('al_rank_kingdom_crown_realm_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_crown_realm_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_crown_realm"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_composite_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_composite_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_composite_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_composite_kingdom"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_commonwealth"
+										onclick = "[GetScriptedGui('al_rank_kingdom_commonwealth_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_commonwealth_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_commonwealth"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_federal_republic"
+										onclick = "[GetScriptedGui('al_rank_kingdom_federal_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_federal_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_federal_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_maritime_republic"
+										onclick = "[GetScriptedGui('al_rank_kingdom_maritime_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_maritime_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_maritime_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R13 High Kingdom ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_kingdom_high_kingdom"
+								onclick = "[GetScriptedGui('al_rank_kingdom_high_kingdom_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_kingdom_high_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_kingdom_high_kingdom"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_high_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_high_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_high_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_high_kingdom"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_composite_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_composite_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_composite_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_composite_kingdom"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_imperial_kingdom"
+										onclick = "[GetScriptedGui('al_rank_kingdom_imperial_kingdom_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_imperial_kingdom_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_imperial_kingdom"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_grand_federation"
+										onclick = "[GetScriptedGui('al_rank_kingdom_grand_federation_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_grand_federation_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_grand_federation"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_continental_republic"
+										onclick = "[GetScriptedGui('al_rank_kingdom_continental_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_continental_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_continental_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_kingdom_maritime_republic"
+										onclick = "[GetScriptedGui('al_rank_kingdom_maritime_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_kingdom_maritime_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_kingdom_maritime_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+					}
+
+					### EMPIRE TIERS (R14-R15) ###
+					vbox = {
+						visible = {
+							trigger = { country_rank_is_empire = yes }
+						}
+
+						text_single = {
+							autoresize = yes
+							using = Font_Size_Medium
+							default_format = "#bold"
+							text = "Empire-tier"
+						}
+
+						### R14 Empire ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_empire_empire"
+								onclick = "[GetScriptedGui('al_rank_empire_empire_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_empire_empire_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_empire_empire"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_empire"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_composite_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_composite_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_composite_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_composite_empire"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_colonial_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_colonial_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_colonial_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_colonial_empire"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_imperial_republic"
+										onclick = "[GetScriptedGui('al_rank_empire_imperial_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_imperial_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_imperial_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_federal_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_federal_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_federal_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_federal_empire"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_maritime_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_maritime_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_maritime_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_maritime_empire"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+
+						### R15 Grand Empire ###
+						hbox = {
+							margin_top = 8
+							margin_bottom = 8
+							button_regular_alt = {
+								blockoverride "primary_visible" {}
+								size = { 140 36 }
+								name = "rank_empire_grand_empire"
+								onclick = "[GetScriptedGui('al_rank_empire_grand_empire_vset_sgui').Execute(GuiScope.End)]"
+								onrightclick = "[GetScriptedGui('al_rank_empire_grand_empire_vrem_sgui').Execute(GuiScope.End)]"
+								text = "rank_empire_grand_empire"
+								fontsize = 10
+								tooltip = "Left click: set R-rank. Right click: remove."
+								button_ignore = none
+							}
+							vbox = {
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_grand_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_grand_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_grand_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_grand_empire"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_overseas_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_overseas_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_overseas_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_overseas_empire"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_composite_grand_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_composite_grand_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_composite_grand_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_composite_grand_empire"
+										fontsize = 10
+										tooltip = "Monarchy subtype."
+										button_ignore = none
+									}
+								}
+								hbox = {
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_maritime_empire"
+										onclick = "[GetScriptedGui('al_rank_empire_maritime_empire_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_maritime_empire_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_maritime_empire"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_hegemonic_republic"
+										onclick = "[GetScriptedGui('al_rank_empire_hegemonic_republic_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_hegemonic_republic_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_hegemonic_republic"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+									button_regular = {
+										blockoverride "primary_visible" {}
+										size = { 130 30 }
+										name = "rank_empire_supreme_federation"
+										onclick = "[GetScriptedGui('al_rank_empire_supreme_federation_vset_sgui').Execute(GuiScope.End)]"
+										onrightclick = "[GetScriptedGui('al_rank_empire_supreme_federation_vrem_sgui').Execute(GuiScope.End)]"
+										text = "rank_empire_supreme_federation"
+										fontsize = 10
+										tooltip = "Republic subtype."
+										button_ignore = none
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
