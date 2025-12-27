@@ -32,6 +32,9 @@ window = {
 			size = { 0 0 }
 	
 			blockoverride "scrollbox_content" {
+				vbox = {
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
 					#### START RRANKS (76) ####
 				text_single = {
 					autoresize = yes
@@ -1072,6 +1075,7 @@ window = {
 						tooltip = "Left click: set. Right click: remove. Active when tier=empire, gov=republic."
 						button_ignore = none
 					}
+				}
 				}
 				}
 }
