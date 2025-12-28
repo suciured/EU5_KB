@@ -740,105 +740,63 @@ REPLACE:country_flavor = {
 	text = {
 		localization_key = al_rrank_r15_name
 		trigger = {
-			great_power_ranking = 1
+			great_power_score >= 600
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r14_name
 		trigger = {
-			great_power_ranking = 2
+			great_power_score >= 200
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r13_name
 		trigger = {
-			great_power_ranking = 3
+			great_power_score >= 100
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r12_name
 		trigger = {
-			great_power_ranking = 4
+			great_power_score >= 50
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r11_name
 		trigger = {
-			great_power_ranking = 5
+			great_power_score >= 10
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r10_name
 		trigger = {
-			great_power_ranking = 6
+			great_power_score >= 5
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r9_name
 		trigger = {
-			great_power_ranking = 7
+			great_power_score >= 1
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r8_name
 		trigger = {
-			great_power_ranking = 8
+			great_power_score >= 0.05
 		}
 	}
 
 	text = {
 		localization_key = al_rrank_r7_name
 		trigger = {
-			great_power_ranking = 9
-		}
-	}
-
-	text = {
-		localization_key = al_rrank_r6_name
-		trigger = {
-			great_power_ranking = 10
-		}
-	}
-
-	text = {
-		localization_key = al_rrank_r5_name
-		trigger = {
-			great_power_ranking = 11
-		}
-	}
-
-	text = {
-		localization_key = al_rrank_r4_name
-		trigger = {
-			great_power_ranking = 12
-		}
-	}
-
-	text = {
-		localization_key = al_rrank_r3_name
-		trigger = {
-			great_power_ranking = 13
-		}
-	}
-
-	text = {
-		localization_key = al_rrank_r2_name
-		trigger = {
-			great_power_ranking = 14
-		}
-	}
-
-	text = {
-		localization_key = al_rrank_r1_name
-		trigger = {
-			great_power_ranking = 15
+			great_power_score > 0
 		}
 	}
 
