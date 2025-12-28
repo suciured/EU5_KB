@@ -4,7 +4,6 @@ l_english:
   al_rrank_window_button_tooltip: "Left click to open. Right click to close."
   al_rrank_button_tooltip: "Set the country R-Rank."
   al_rrank_type_tooltip: "Set the country R-Rank type."
-  al_rrank_r0_name: "R0 | Emerging Authority"
   al_rrank_r1_name: "R1 | Local Authority"
   al_r1_type_1_name: "Lordship"
   al_r1_type_2_name: "Manor"
