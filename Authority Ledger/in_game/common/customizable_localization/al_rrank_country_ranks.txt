@@ -745,6 +745,118 @@ REPLACE:country_flavor = {
 	}
 
 	text = {
+		localization_key = al_rrank_r15_name
+		trigger = {
+			great_power_score >= 1000
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r14_name
+		trigger = {
+			great_power_score >= 935
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r13_name
+		trigger = {
+			great_power_score >= 870
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r12_name
+		trigger = {
+			great_power_score >= 805
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r11_name
+		trigger = {
+			great_power_score >= 740
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r10_name
+		trigger = {
+			great_power_score >= 675
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r9_name
+		trigger = {
+			great_power_score >= 610
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r8_name
+		trigger = {
+			great_power_score >= 545
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r7_name
+		trigger = {
+			great_power_score >= 480
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r6_name
+		trigger = {
+			great_power_score >= 415
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r5_name
+		trigger = {
+			great_power_score >= 350
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r4_name
+		trigger = {
+			great_power_score >= 285
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r3_name
+		trigger = {
+			great_power_score >= 220
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r2_name
+		trigger = {
+			great_power_score >= 155
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r1_name
+		trigger = {
+			great_power_score >= 90
+		}
+	}
+
+	text = {
+		localization_key = al_rrank_r0_name
+		trigger = {
+			great_power_score >= 25
+		}
+	}
+
+	text = {
 		localization_key = al_rrank_r0_name
 		fallback = yes
 	}
